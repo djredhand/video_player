@@ -1,0 +1,20 @@
+#cognex-overlay{
+	width: 100%;
+	background: #333;
+}
+#player-container{
+	width: 640px;
+	margin: 0 auto;
+}
+.active-item{
+	background: #e2e2e2;
+}
+.active-item:hover{
+	background: #e2e2e2 !important;
+}
+.cog-nav-item{
+	cursor: pointer;
+}
+.cog-nav-item:hover{
+	background: #666;
+}
