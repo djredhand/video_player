@@ -1,26 +1,11 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-
-    <!-- Load player theme -->
-    <link rel="stylesheet" href="themes/maccaco/projekktor.style.css" type="text/css" media="screen" />
-
-    <!-- Load jquery -->
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-
-    <!-- load projekktor -->
-    <script type="text/javascript" src="projekktor-1.3.09.min.js"></script>
-
-</head>
-<body>
-
-    <div id="player_a" class="projekktor"></div>
-
-    <script type="text/javascript">
-    $(document).ready(function() {
+ $(document).ready(function() {
         var CognexVideo = function(){
+            this.create_player_elm = function(){
+                var elm = $('<div id="cognex-player" class="projekktor"></div>');
+                $('body').append(elm);
+            },
             this.init_player = function(){
-                projekktor('#player_a', {
+                projekktor('#cognex-player', {
                 poster: 'media/intro.png',
                 title: 'this is projekktor',
                 playerFlashMP4: 'swf/StrobeMediaPlyback/StrobeMediaPlayback.swf',
@@ -37,13 +22,22 @@
                 });
             },//end init_player 
             this.init = function(){
+                //create the elements to hook into
+                this.create_player_elm();
+                // then init the player
                 this.init_player();
             }
         }//end CognexVideo
-        player = new CognexVideo();
-        player.init();
-    });//end doc.read
-    </script>
 
-</body>
-</html>
+        $.getScript( "http://localhost/cognex_video/projekktor-1.3.09.min.js" )
+            .done(function( script, textStatus ) {
+                if(console){
+                    console.log( textStatus );        
+                }
+                player = new CognexVideo();
+                player.init();
+            })
+            .fail(function( jqxhr, settings, exception ) {
+                $( "div.log" ).text( "Triggered ajaxError handler." );
+        });
+    });//end doc.read
