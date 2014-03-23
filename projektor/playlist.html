@@ -7,6 +7,13 @@
 
 </head>
 <body style="margin:0">
+	<button id="test-player">Test player </button>
 <script type="text/javascript" src="http://localhost/cognex_video/projektor/cognex_plugin.js"></script>
+<script>
+	$("#test-player").click(function(){
+		player = new CognexVideo();
+	    player.init();
+	})
+</script>
 </body>
 </html>

@@ -1,4 +1,4 @@
- $(document).ready(function() {
+
         var CognexVideo = function(){
             this.create_player_elm = function(){
                 var elm = $('<div id="player-container"><div id="cognex-player" class="projekktor"></div></div>');
@@ -90,8 +90,10 @@
                 this.add_navigation(player);
                 this.eventListeners()
             }
-
-            this.init();
+            //IE bug with navigation being created again after end of last video. 
+            if($("#cog-nav").length==0){ 
+                this.init();
+            }
         }
 
         $.getScript( "http://localhost/cognex_video/projektor/projekktor-1.3.09.min.js" )
@@ -101,8 +103,7 @@
                 if(console){
                     console.log( textStatus );        
                 }
-                player = new CognexVideo();
-                player.init();
+                
                 
                 //create_playlist_nav(player);
             })
@@ -115,8 +116,3 @@
         /*
         * Decorate player with nav and event listeners
         */
-
-        
-
-        
-    });//end doc.read
