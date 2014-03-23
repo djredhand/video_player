@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+    <!-- Load player theme -->
+    <link rel="stylesheet" href="themes/maccaco/projekktor.style.css" type="text/css" media="screen" />
+
+    <!-- Load jquery -->
+    <script type="text/javascript" src="jquery-1.9.1.min.js"></script>
+
+    <!-- load projekktor -->
+    <script type="text/javascript" src="projekktor-1.3.09.min.js"></script>
+
+</head>
+<body>
+
+    <div id="player_a" class="projekktor"></div>
+
+    <script type="text/javascript">
+    $(document).ready(function() {
+        projekktor('#player_a', {
+        poster: 'media/intro.png',
+        title: 'this is projekktor',
+        playerFlashMP4: 'swf/StrobeMediaPlyback/StrobeMediaPlayback.swf',
+        playerFlashMP3: 'swf/StrobeMediaPlayback/StrobeMediaPlayback.swf',
+        width: 640,
+        height: 385,
+        playlist: [
+            {
+            0: {src: "media/test1.ogv", type: "video/ogg"},
+            1: {src: "media/intro_.mp4", type: "video/mp4"},
+            2: {src: "media/intro.webm", type: "video/webm"}
+            }
+        ]    
+        }, function(player) {
+            window.Player = player;
+        } // on ready 
+        );
+    });
+    </script>
+
+</body>
+</html>
