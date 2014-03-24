@@ -12,6 +12,7 @@ Author URI: http://www.porkhead.org
 general
 ***************************************/
 .projekktor {
+    overflow: visible;
     background-color: #000; 
     font-family: 'Lucida Grande', 'Trebuchet MS', Arial, Sans-Serif;
     font-size: 12px;
@@ -109,6 +110,7 @@ display plugin
 controlbar plugin
 ***************************************/
 .ppcontrols {
+    margin: 25px 0 0 0;
     position: absolute;
     bottom: 0;
     right:0;
@@ -157,22 +159,23 @@ controlbar plugin
     -webkit-transition: opacity 0.1s linear;
     -moz-transition: opacity 0.1s linear;
     -o-transition: opacity 0.1s linear;
-    transition: opacity 0.1s linear;    
+    transition: opacity 0.1s linear;   
+    margin: 80px 0 0 0; 
 }
 
 
 .ppcontrols.inactive {
-    filter: alpha(opacity=0);        
-    -moz-opacity: 0;
-    -khtml-opacity: 0;
-    opacity: 0;
-    filter: alpha(opacity=0);
+    filter: alpha(opacity=100);    
+    -moz-opacity: 1;
+    -khtml-opacity: 1;
+    opacity: 1;
     -webkit-backface-visibility: hidden;
     -webkit-transform:translate3d(0,0,0);    
-    -webkit-transition: opacity 0.5s linear;
-    -moz-transition: opacity 0.5s linear;
-    -o-transition: opacity 0.5s linear;
-    transition: opacity 0.5s linear;
+    -webkit-transition: opacity 0.1s linear;
+    -moz-transition: opacity 0.1s linear;
+    -o-transition: opacity 0.1s linear;
+    transition: opacity 0.1s linear;
+    margin: 80px 0 0 0;    
 }
 
 .ppcontrols ul {
