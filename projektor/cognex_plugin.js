@@ -1,12 +1,24 @@
 
         var CognexVideo = function(){
             this.create_player_elm = function(){
-                var elm = $('<div id="player-container"><div id="cognex-player" class="projekktor"></div></div>');
+                var left_col_header = $('<div class="cog-col-header">INTERACTIVE TOOL KIT</div>');
+                var left_column = $('<div class="cog-left-col"></div>');
+                var right_column  = $('<div class="cog-right-col"></div>');
+                var player_container = $('<div id="player-container"></div>');
+                var player = $('<div id="cognex-player" class="projekktor"></div>');
+                var close_button = $('<div class="cog-vid-close-btn">X</div>')
                 var overlay = $('<div id="cognex-overlay"></div>');
                 var winHeight = $(document).height();
                 overlay.height(winHeight);
                 $('body').append(overlay);
-                overlay.append(elm);
+                left_column.append(left_col_header);
+                overlay.append(close_button, player_container);
+                player_container.append(left_column,right_column);
+                right_column.append(player);
+
+                $('.cog-vid-close-btn').click(function(){
+                    overlay.remove();
+                })
             },
             this.create_playlist_nav = function(CognexPlayer){
                //console.log(CognexPlayer);
@@ -20,17 +32,17 @@
                 width: 640,
                 height: 385,
                 playlist: [{
-                            0: {src: "media/test1.ogv", type: "video/ogg", title: 'test1'},
+                            0: {src: "media/test1.ogv", type: "video/ogg", title: 'dsadsa'},
                             1: {src: "media/intro_.mp4", type: "video/mp4", title: 'test1'},
                             2: {src: "media/intro.webm", type: "video/webm", title: 'test1'}
                             },
                             {
-                            0: {src: "media/test1.ogv", type: "video/ogg", title: 'test2'},
+                            0: {src: "media/test1.ogv", type: "video/ogg", title: 'dsadsa'},
                             1: {src: "media/intro_.mp4", type: "video/mp4", title: 'test2'},
                             2: {src: "media/intro.webm", type: "video/webm", title: 'test2'}
                             },
                             {
-                            0: {src: "media/test1.ogv", type: "video/ogg", title: 'test3'},
+                            0: {src: "media/test1.ogv", type: "video/ogg", title: 'testsdadsa3'},
                             1: {src: "media/intro_.mp4", type: "video/mp4", title: 'test3'},
                             2: {src: "media/intro.webm", type: "video/webm", title: 'test3'}
                             },
@@ -61,10 +73,14 @@
         var player_decoration = function(player){
             this.add_navigation = function(player){
                 var config = player.config;
-                var player_container = $('#player-container');
-                var nav = $('<ul id="cog-nav"></ul').appendTo(player_container);
+                var left_column = $('.cog-left-col');
+                var nav = $('<ul id="cog-nav"></ul').appendTo(left_column);
                 $(config._playlist).each(function(index){
-                    var list_item = $('<li class="cog-nav-item">'+ this[0].title +'</li>');
+                    var num = index + 1;
+                    if(num<10){
+                        num = '0' + num;
+                    }
+                    var list_item = $('<li class="cog-nav-item"><div class="cog-item-title"><span>'+num+' </span>'+ this[0].title +'</div></li>');
                     nav.append(list_item);
                     list_item.click(function(){
                         $('.cog-nav-item').removeClass('active-item');
