@@ -1,6 +1,6 @@
 
         var CognexVideo = function(){
-            this.create_player_elm = function(){
+            this.create_player_elm = function(template){
                 var left_col_header = $('<div class="cog-col-header">INTERACTIVE TOOL KIT</div>');
                 var left_column = $('<div class="cog-left-col"></div>');
                 var right_column  = $('<div class="cog-right-col"></div>');
@@ -9,12 +9,15 @@
                 var close_button = $('<div class="cog-vid-close-btn">X</div>')
                 var overlay = $('<div id="cognex-overlay"></div>');
                 var winHeight = $(document).height();
+                
                 overlay.height(winHeight);
                 $('body').append(overlay);
                 left_column.append(left_col_header);
                 overlay.append(close_button, player_container);
                 player_container.append(left_column,right_column);
+                player.append(template)
                 right_column.append(player);
+                
 
                 $('.cog-vid-close-btn').click(function(){
                     overlay.remove();
@@ -31,6 +34,8 @@
                 playerFlashMP3: 'swf/StrobeMediaPlayback/StrobeMediaPlayback.swf',
                 width: 640,
                 height: 385,
+                controls: true,            // controls are disabled (inactive) if set to FALSE
+                autoplay: false,
                 playlist: [{
                             0: {src: "media/test1.ogv", type: "video/ogg", title: 'dsadsa'},
                             1: {src: "media/intro_.mp4", type: "video/mp4", title: 'test1'},
@@ -62,11 +67,15 @@
                 });
             },//endinit_player 
             this.init = function(){
-                //create the elements to hook into
-                this.create_player_elm();
-                // then init the player
-                this.init_player();
-                this.create_playlist_nav(this);
+                that = this;
+                var template = $.get('template.html', function(data){
+                        //create the elements to hook into
+                        that.create_player_elm(data);
+                        // then init the player
+                        that.init_player();
+                        that.create_playlist_nav(that);
+                    });
+                
             }
         }//end CognexVideo
 

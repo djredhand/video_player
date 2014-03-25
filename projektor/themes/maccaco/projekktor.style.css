@@ -1,3 +1,4 @@
+
 /*
 Theme Name: MACCACO
 Theme URI: http://www.projekktor.com/downloads
@@ -12,13 +13,11 @@ Author URI: http://www.porkhead.org
 general
 ***************************************/
 .projekktor {
-    overflow: visible;
-    background-color: #000; 
     font-family: 'Lucida Grande', 'Trebuchet MS', Arial, Sans-Serif;
     font-size: 12px;
     font-weight: bold;
     text-transform:uppercase;
-    padding:0;
+    padding:0 0 120px 0;
     display:block;
     position: relative;
     overflow: hidden;
@@ -110,9 +109,8 @@ display plugin
 controlbar plugin
 ***************************************/
 .ppcontrols {
-    margin: 25px 0 0 0;
     position: absolute;
-    bottom: 0;
+    bottom: 80px;
     right:0;
     display: block;
     width: 100%;
@@ -159,23 +157,12 @@ controlbar plugin
     -webkit-transition: opacity 0.1s linear;
     -moz-transition: opacity 0.1s linear;
     -o-transition: opacity 0.1s linear;
-    transition: opacity 0.1s linear;   
-    margin: 80px 0 0 0; 
+    transition: opacity 0.1s linear;    
 }
 
 
 .ppcontrols.inactive {
-    filter: alpha(opacity=100);    
-    -moz-opacity: 1;
-    -khtml-opacity: 1;
-    opacity: 1;
-    -webkit-backface-visibility: hidden;
-    -webkit-transform:translate3d(0,0,0);    
-    -webkit-transition: opacity 0.1s linear;
-    -moz-transition: opacity 0.1s linear;
-    -o-transition: opacity 0.1s linear;
-    transition: opacity 0.1s linear;
-    margin: 80px 0 0 0;    
+    display: block;
 }
 
 .ppcontrols ul {
@@ -225,6 +212,7 @@ controlbar plugin
     height: 30px;
     cursor: pointer;
     border-right: 1px solid #000;
+    margin: -42px 0 0 310px;
 }
 
 .ppplay:hover {
@@ -261,6 +249,7 @@ controlbar plugin
     background: url("maccaco.png") no-repeat right top transparent;
     cursor: pointer;
     border-left: 1px solid #413e3e;
+    margin: -30px 0 0 607px;
 }
 .ppfsenter:hover {
     background: url("maccaco.png") no-repeat right -35px transparent;
@@ -406,7 +395,10 @@ background: url("maccaco.png") no-repeat -91px top transparent;
     border-left:1px solid #413e3e;
     border-right:1px solid #000;
 }
-.ppnext { border-right:none;}
+.ppnext { 
+    border-right: none;
+    margin: -20px 0 0 370px;
+}
 .ppnext:hover {
     background: url("maccaco.png") no-repeat -59px -35px transparent;
 }
@@ -447,16 +439,17 @@ background: url("maccaco.png") no-repeat -91px top transparent;
 .ppscrubber {
     position: absolute;
     height: 5px;
-    width: 100%;
-    background: url("maccaco-load.gif") repeat-x left top transparent;
-    left: 0;
+    width: 200px;
+    background: url("scrubber1") repeat-x left top transparent;
+    left: 90px;
     margin: 0;
     padding: 0;
     border-bottom: 1px solid #000;
-}
+    top: 13px;
+    }
 
 .audio .ppscrubber {
-    background: url("maccaco-load-static.png") repeat-x left top transparent;
+    background: url("scrubber2") repeat-x left top transparent;
 }
 
 
@@ -469,7 +462,7 @@ background: url("maccaco.png") no-repeat -91px top transparent;
     top:0;
     left:0;
     height: 5px;
-    width: 100%;    
+    width: 200px;    
 }
 
 .ppplayhead, .pploaded {
@@ -508,6 +501,7 @@ background: url("maccaco.png") no-repeat -91px top transparent;
 }
 
 .pploaded {
+    width: 100%!important;
     position: relative;    
     z-index: 10;
     background: rgb(65, 62, 62) ;
@@ -515,11 +509,19 @@ background: url("maccaco.png") no-repeat -91px top transparent;
     filter: alpha(opacity = 80);
     -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
 }
+.head-grab{
+    position: absolute;
+    right: -3px;
+    width: 15px;
+    height: 8px;
+    background: rgb(187, 179, 179);
+    top: -2px;
+    border-radius: 3px;
+}
 
 .ppplayhead {
     margin-top: -5px;
 }
-
 
 .ppscrubbertip {
     padding: 3px;
@@ -531,7 +533,7 @@ background: url("maccaco.png") no-repeat -91px top transparent;
     color: #fdfdfd;
     background: #2e2d2d;
     z-index: 10;
-    display: none;
+    display: block;
 }
 .ppscrubbertip:after {
 	top: 100%;
@@ -701,3 +703,30 @@ background: url("maccaco.png") no-repeat -91px top transparent;
     bottom: 38px;
 }
 
+
+/*
+* Customizations
+*/
+
+.ppcontrols div{
+    color:#fff;
+}
+.ppstop{
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    margin: -20px 0 0 350px;
+}
+.ppstop.inactive{
+    display: block!important;
+}
+
+.control-left{
+    float: left;
+}
+.clear{
+    clear: both;
+}
+.ppcontrols div.control-left{
+    float: left;
+}
