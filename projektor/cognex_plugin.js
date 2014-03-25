@@ -30,8 +30,8 @@
                 projekktor('#cognex-player', {
                 poster: 'media/intro.png',
                 title: 'this is projekktor',
-                playerFlashMP4: 'swf/StrobeMediaPlyback/StrobeMediaPlayback.swf',
-                playerFlashMP3: 'swf/StrobeMediaPlayback/StrobeMediaPlayback.swf',
+                playerFlashMP4: 'http://jamesemmettdesign.com/cognex_video/projektor/swf/StrobeMediaPlayback/StrobeMediaPlayback.swf',
+                playerFlashMP3: 'http://jamesemmettdesign.com/cognex_video/projektor/swf/StrobeMediaPlayback/StrobeMediaPlayback.swf',
                 width: 640,
                 height: 385,
                 controls: true,            // controls are disabled (inactive) if set to FALSE
