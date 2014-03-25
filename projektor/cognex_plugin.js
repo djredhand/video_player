@@ -37,9 +37,9 @@
                 controls: true,            // controls are disabled (inactive) if set to FALSE
                 autoplay: false,
                 playlist: [{
-                            0: {src: "media/test1.ogv", type: "video/ogg", title: 'dsadsa'},
-                            1: {src: "media/intro_.mp4", type: "video/mp4", title: 'test1'},
-                            2: {src: "media/intro.webm", type: "video/webm", title: 'test1'}
+                            0: {src: "http://jamesemmettdesign.com/cognex_video/projektormedia/test1.ogv", type: "video/ogg", title: 'dsadsa'},
+                            1: {src: "http://jamesemmettdesign.com/cognex_video/projektormedia/intro_.mp4", type: "video/mp4", title: 'test1'},
+                            2: {src: "http://jamesemmettdesign.com/cognex_video/projektormedia/intro.webm", type: "video/webm", title: 'test1'}
                             },
                             {
                             0: {src: "media/test1.ogv", type: "video/ogg", title: 'dsadsa'},
