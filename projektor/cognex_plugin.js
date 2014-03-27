@@ -66,16 +66,24 @@
                             },
                             {
                             description: {src: "descriptions.html", type:"text/html", content:"tenreasons"},
-                            0: {src: "media/test1.ogv", type: "video/ogg", title: 'ten reasons'},
-                            1: {src: "media/intro_.mp4", type: "video/mp4", title: 'ten reasons'},
-                            2: {src: "media/intro.webm", type: "video/webm", title: 'ten reasons'}
+                            0: {src: "media/test1.ogv", type: "video/ogg", title: 'tenreasons'},
+                            1: {src: "media/intro_.mp4", type: "video/mp4", title: 'tenreasons'},
+                            2: {src: "media/intro.webm", type: "video/webm", title: 'tenreasons'}
+                            },
+                            {
+                            //description: {src: "descriptions.html", type:"text/html", content:"multiple"},
+                            0: {src: "media/test1.ogv", type: "video/ogg", title: 'multiple'},
+                            1: {src: "media/intro_.mp4", type: "video/mp4", title: 'multiple'},
+                            2: {src: "media/intro.webm", type: "video/webm", title: 'multiple'}
                             },
                             {
                             description: {src: "descriptions.html", type:"text/html", content:"multiple"},
                             0: {src: "media/test1.ogv", type: "video/ogg", title: 'multiple'},
                             1: {src: "media/intro_.mp4", type: "video/mp4", title: 'multiple'},
                             2: {src: "media/intro.webm", type: "video/webm", title: 'multiple'}
-                            }]    
+                            }
+
+                            ]    
                 }, function(player) {
                     window.CognexPlayer = player;
                     player_decoration(CognexPlayer);
