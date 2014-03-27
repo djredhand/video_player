@@ -43,8 +43,8 @@
                 height: 385,
                 controls: true,            // controls are disabled (inactive) if set to FALSE
                 autoplay: false,
+                description_template: {src: "descriptions.html", type:"text/html"},
                 playlist: [{
-                            description: {src: "descriptions.html", type:"text/html", content:"hotbars"},
                             0: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/test1.ogv", 
                                 type: "video/ogg", title: 'Hotbars'},
                             1: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/intro_.mp4", 
@@ -53,31 +53,31 @@
                                 type: "video/webm", title: 'Hotbars'}
                             },
                             {
-                            description: {src: "descriptions.html", type:"text/html", content:"supercharged"},
+                            
                             0: {src: "media/test1.ogv", type: "video/ogg", title: 'supercharged'},
                             1: {src: "media/intro_.mp4", type: "video/mp4", title: 'test2'},
                             2: {src: "media/intro.webm", type: "video/webm", title: 'test2'}
                             },
                             {
-                            description: {src: "descriptions.html", type:"text/html", content:"introduction"},
+                            
                             0: {src: "media/test1.ogv", type: "video/ogg", title: 'introduction'},
                             1: {src: "media/intro_.mp4", type: "video/mp4", title: 'test3'},
                             2: {src: "media/intro.webm", type: "video/webm", title: 'test3'}
                             },
                             {
-                            description: {src: "descriptions.html", type:"text/html", content:"tenreasons"},
+                            
                             0: {src: "media/test1.ogv", type: "video/ogg", title: 'tenreasons'},
                             1: {src: "media/intro_.mp4", type: "video/mp4", title: 'tenreasons'},
                             2: {src: "media/intro.webm", type: "video/webm", title: 'tenreasons'}
                             },
                             {
-                            //description: {src: "descriptions.html", type:"text/html", content:"multiple"},
+                           
                             0: {src: "media/test1.ogv", type: "video/ogg", title: 'multiple'},
                             1: {src: "media/intro_.mp4", type: "video/mp4", title: 'multiple'},
                             2: {src: "media/intro.webm", type: "video/webm", title: 'multiple'}
                             },
                             {
-                            description: {src: "descriptions.html", type:"text/html", content:"multiple"},
+                            
                             0: {src: "media/test1.ogv", type: "video/ogg", title: 'multiple'},
                             1: {src: "media/intro_.mp4", type: "video/mp4", title: 'multiple'},
                             2: {src: "media/intro.webm", type: "video/webm", title: 'multiple'}
@@ -133,15 +133,16 @@
                         $(this).addClass('active-item');
                         $('.cog-desc-content').empty();
                         var current_index = $(this).index();
-                        window.player.itemIndex = current_index;
-                        CognexPlayer.setItem(current_index);
-                        CognexPlayer.setStop();
+                        var description_template = window.active_player.config.description_template;
+                        window.active_player.itemIndex = current_index;
+                        window.active_player.setActiveItem(current_index);
+                        window.active_player.setStop();
                         
-                        CognexPlayer.description = CognexPlayer.config._playlist[index].description;
                         
-                        $("#ajax-content").load(CognexPlayer.description.src, function(){
+                        
+                        $("#ajax-content").load(description_template.src, function(){
                             $(".cog-desc-content").empty();
-                            var clone = $("#" + CognexPlayer.description.content).clone();
+                            var clone = $("#" + description_template.content).clone();
                             $('.cog-desc-content').append(clone);
                         });   
                     })
