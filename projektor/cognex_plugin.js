@@ -106,11 +106,11 @@
         var player_decoration = function(player){
 
             this.place_description = function(CognexPlayer, index){
-                console.log('place description');
+                console.log('place description 109');
                 CognexPlayer.description = CognexPlayer.config._playlist[index].description;
                 $(".cog-desc-content").empty();
-                $("#ajax-content").load(CognexPlayer.description.src, function(){
-                    var clone = $("#" + CognexPlayer.description.content).clone();
+                $("#ajax-content").load(CognexPlayer.config.description_template.src, function(){
+                    var clone = $("#" + CognexPlayer.description).clone();
                     $('.cog-desc-content').append(clone);
                 });
                 
@@ -131,7 +131,7 @@
                     list_item.click(function(){
                         $('.cog-nav-item').removeClass('active-item');
                         $(this).addClass('active-item');
-                        $('.cog-desc-content').empty();
+                        //$('.cog-desc-content').empty();
                         var current_index = $(this).index();
                         var description_template = window.active_player.config.description_template;
                         window.active_player.itemIndex = current_index;
@@ -152,27 +152,22 @@
             },
             this.eventListeners = function(){
                 var ApiTest =  function(data) {
-                    var index = window.player.itemIndex;
-                    //console.log(data);
                     if(data =="STOPPED"){
                         console.log('stopped');
+                        console.log('place description 162');
+                        var current_item_index = CognexPlayer.getItemIdx();
+                        CognexPlayer.description = CognexPlayer.config._playlist[current_item_index][0].title;
                         
-                        console.log(index)
-                        
-                        console.log('place description');
-                        
-                        CognexPlayer.description = CognexPlayer.config._playlist[index].description;
-                        
-                        $("#ajax-content").load(CognexPlayer.description.src, function(){
+                        $("#ajax-content").load(CognexPlayer.config.description_template.src, function(){
                             $(".cog-desc-content").empty();
-                            var clone = $("#" + CognexPlayer.description.content).clone();
+                            var clone = $("#" + CognexPlayer.description).clone();
                             $('.cog-desc-content').append(clone);
                         });
 
                     }
                     if(data=="PLAYING"){
                         //]var video_index = CognexPlayer._currentItem;
-                        $('.cog-desc-content').empty();
+                        //$('.cog-desc-content').empty();
                         //$('.cog-nav-item').removeClass('active-item');
                         //$('.cog-nav-item').eq(video_index).addClass('active-item');
 
