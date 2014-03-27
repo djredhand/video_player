@@ -1,6 +1,5 @@
 
         var CognexVideo = function(){
-            this.itemIndex = 0,
             this.create_player_elm = function(template){
                 var left_col_header = $('<div class="cog-col-header">INTERACTIVE TOOL KIT</div>');
                 var col_desc_content = $('<div class="cog-desc-content"/>');
@@ -54,27 +53,27 @@
                             },
                             {
                             description: {src: "descriptions.html", type:"text/html", content:"supercharged"},
-                            0: {src: "media/test1.ogv", type: "video/ogg", title: 'supercharged'},
+                            0: {src: "media/test1.ogv", type: "video/ogg", title: 'dsadsa'},
                             1: {src: "media/intro_.mp4", type: "video/mp4", title: 'test2'},
                             2: {src: "media/intro.webm", type: "video/webm", title: 'test2'}
                             },
                             {
                             description: {src: "descriptions.html", type:"text/html", content:"introduction"},
-                            0: {src: "media/test1.ogv", type: "video/ogg", title: 'introduction'},
+                            0: {src: "media/test1.ogv", type: "video/ogg", title: 'testsdadsa3'},
                             1: {src: "media/intro_.mp4", type: "video/mp4", title: 'test3'},
                             2: {src: "media/intro.webm", type: "video/webm", title: 'test3'}
                             },
                             {
-                            description: {src: "descriptions.html", type:"text/html", content:"tenreasons"},
-                            0: {src: "media/test1.ogv", type: "video/ogg", title: 'ten reasons'},
-                            1: {src: "media/intro_.mp4", type: "video/mp4", title: 'ten reasons'},
-                            2: {src: "media/intro.webm", type: "video/webm", title: 'ten reasons'}
+                            description: {src: "descriptions.html", type:"text/html", content:"ten-reasons"},
+                            0: {src: "media/test1.ogv", type: "video/ogg", title: 'test4'},
+                            1: {src: "media/intro_.mp4", type: "video/mp4", title: 'test4'},
+                            2: {src: "media/intro.webm", type: "video/webm", title: 'test4'}
                             },
                             {
-                            description: {src: "descriptions.html", type:"text/html", content:"multiple"},
-                            0: {src: "media/test1.ogv", type: "video/ogg", title: 'multiple'},
-                            1: {src: "media/intro_.mp4", type: "video/mp4", title: 'multiple'},
-                            2: {src: "media/intro.webm", type: "video/webm", title: 'multiple'}
+                            description: {src: "descriptions.html", type:"text/html", content:"multip"},
+                            0: {src: "media/test1.ogv", type: "video/ogg", title: 'test5'},
+                            1: {src: "media/intro_.mp4", type: "video/mp4", title: 'test5'},
+                            2: {src: "media/intro.webm", type: "video/webm", title: 'test5'}
                             }]    
                 }, function(player) {
                     window.CognexPlayer = player;
@@ -98,7 +97,6 @@
         var player_decoration = function(player){
 
             this.place_description = function(CognexPlayer, index){
-                console.log('place description');
                 CognexPlayer.description = CognexPlayer.config._playlist[index].description;
                 $(".cog-desc-content").empty();
                 $("#ajax-content").load(CognexPlayer.description.src, function(){
@@ -123,16 +121,11 @@
                     list_item.click(function(){
                         $('.cog-nav-item').removeClass('active-item');
                         $(this).addClass('active-item');
-                        $('.cog-desc-content').empty();
-                        var current_index = $(this).index();
-                        window.player.itemIndex = current_index;
-                        CognexPlayer.setItem(current_index);
-                        CognexPlayer.setStop();
-                        
+                        CognexPlayer.setActiveItem(index);
+
                         CognexPlayer.description = CognexPlayer.config._playlist[index].description;
-                        
+                        $(".cog-desc-content").empty();
                         $("#ajax-content").load(CognexPlayer.description.src, function(){
-                            $(".cog-desc-content").empty();
                             var clone = $("#" + CognexPlayer.description.content).clone();
                             $('.cog-desc-content').append(clone);
                         });   
@@ -143,32 +136,17 @@
             },
             this.eventListeners = function(){
                 var ApiTest =  function(data) {
-                    var index = window.player.itemIndex;
-                    //console.log(data);
-                    if(data =="STOPPED"){
-                        console.log('stopped');
-                        
-                        console.log(index)
-                        
-                        console.log('place description');
-                        
-                        CognexPlayer.description = CognexPlayer.config._playlist[index].description;
-                        
-                        $("#ajax-content").load(CognexPlayer.description.src, function(){
-                            $(".cog-desc-content").empty();
-                            var clone = $("#" + CognexPlayer.description.content).clone();
-                            $('.cog-desc-content').append(clone);
-                        });
-
-                    }
+                    console.log(data);
                     if(data=="PLAYING"){
-                        //]var video_index = CognexPlayer._currentItem;
-                        $('.cog-desc-content').empty();
-                        //$('.cog-nav-item').removeClass('active-item');
-                        //$('.cog-nav-item').eq(video_index).addClass('active-item');
+                        var video_index = CognexPlayer.getItemIdx();
+                        $('.cog-nav-item').removeClass('active-item');
+                        $('.cog-nav-item').eq(video_index).addClass('active-item');
 
                     }
-                    
+                    if(data =="STOPPED"){
+                        var index = CognexPlayer.getItemIdx() -1;
+                        this.place_description(CognexPlayer, index);
+                    }
                 };
                 player.addListener('*',ApiTest );
             }
