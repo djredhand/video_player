@@ -85,6 +85,21 @@
 
                             ]    
                 }, function(player) {
+                    $('.ppnext').click(function(){
+                        
+                        player.setStop();
+                        var index = (player._currentItem)
+                        $('.cog-nav-item').removeClass('active-item');
+                        $('.cog-nav-item').eq(index).addClass('active-item');
+                        return false;
+                    })
+                    $('.ppprev').click(function(){
+                        player.setStop();
+                        var index = (player._currentItem)
+                        $('.cog-nav-item').removeClass('active-item');
+                        $('.cog-nav-item').eq(index).addClass('active-item'); 
+                        return false;
+                    })
                     window.CognexPlayer = player;
                     player_decoration(CognexPlayer);
                 });
