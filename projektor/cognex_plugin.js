@@ -13,7 +13,7 @@
                 var overlay = $('<div id="cognex-overlay"></div>');
                 var winHeight = $(document).height();
                 
-                overlay.height(winHeight);
+                //overlay.height(winHeight);
                 $('body').append(overlay, ajax_content);
                 left_column.append(left_col_header);
                 overlay.append(close_button, player_container);
