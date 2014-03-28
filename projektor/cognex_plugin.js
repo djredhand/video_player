@@ -50,16 +50,16 @@
                             1: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/intro_.mp4", 
                                 type: "video/mp4", title: 'Hotbars'},
                             2: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/intro.webm", 
-                                type: "video/webm", title: 'Hotbars'}
+                                type: "video/webm", title: 'Hotbars'},
                             },
-                            {
                             
-                            0: {src: "media/test1.ogv", type: "video/ogg", title: 'supercharged'},
-                            1: {src: "media/intro_.mp4", type: "video/mp4", title: 'test2'},
-                            2: {src: "media/intro.webm", type: "video/webm", title: 'test2'}
+                            {
+                            0: {src: "media/intro.ogv", type: "video/ogg", title: 'supercharged'},
+                            1: {src: "media/intro.mp4", type: "video/mp4", title: 'test2'},
+                            2: {src: "media/intro.webm", type: "video/webm", title: 'test2'},
                             },
+
                             {
-                            
                             0: {src: "media/test1.ogv", type: "video/ogg", title: 'introduction'},
                             1: {src: "media/intro_.mp4", type: "video/mp4", title: 'test3'},
                             2: {src: "media/intro.webm", type: "video/webm", title: 'test3'}
@@ -107,7 +107,9 @@
 
             this.place_description = function(CognexPlayer, index){
                 console.log('place description 109');
-                CognexPlayer.description = CognexPlayer.config._playlist[index].description;
+                console.log(index)
+                if (index==undefined){index=1};
+                CognexPlayer.description = CognexPlayer.config._playlist[index][0].title;
                 $(".cog-desc-content").empty();
                 $("#ajax-content").load(CognexPlayer.config.description_template.src, function(){
                     var clone = $("#" + CognexPlayer.description).clone();
@@ -137,15 +139,13 @@
                         window.active_player.itemIndex = current_index;
                         window.active_player.setActiveItem(current_index);
                         window.active_player.setStop();
-                        
-                        
-                        
+
                         $("#ajax-content").load(description_template.src, function(){
                             $(".cog-desc-content").empty();
                             var clone = $("#" + description_template.content).clone();
                             $('.cog-desc-content').append(clone);
                         });   
-                    })
+                    })//end click
                     //set the first item to active
                     $('.cog-nav-item').eq(0).addClass('active-item');
                 })    
@@ -167,7 +167,7 @@
                     }
                     if(data=="PLAYING"){
                         //]var video_index = CognexPlayer._currentItem;
-                        //$('.cog-desc-content').empty();
+                        $('.cog-desc-content').empty();
                         //$('.cog-nav-item').removeClass('active-item');
                         //$('.cog-nav-item').eq(video_index).addClass('active-item');
 
