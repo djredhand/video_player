@@ -121,8 +121,8 @@
         var player_decoration = function(player){
 
             this.place_description = function(CognexPlayer, index){
-                console.log('place description 109');
-                console.log(index)
+                //console.log('place description 109');
+                //console.log(index)
                 if (index==undefined){index=1};
                 CognexPlayer.description = CognexPlayer.config._playlist[index][0].title;
                 $(".cog-desc-content").empty();
@@ -146,9 +146,10 @@
                     nav.append(list_item);
                     window.active_player = player;
                     list_item.click(function(){
+                        
                         $('.cog-nav-item').removeClass('active-item');
                         $(this).addClass('active-item');
-                        //$('.cog-desc-content').empty();
+
                         var current_index = $(this).index();
                         var description_template = window.active_player.config.description_template;
                         window.active_player.itemIndex = current_index;
@@ -156,9 +157,12 @@
                         window.active_player.setStop();
 
                         $("#ajax-content").load(description_template.src, function(){
-                            $(".cog-desc-content").empty();
-                            var clone = $("#" + description_template.content).clone();
-                            $('.cog-desc-content').append(clone);
+                            var lit_nav_index = $('.cog-nav-item.active-item').index();
+                            if (active_player._currentItem !== lit_nav_index){
+                                $(".cog-desc-content").empty();
+                                var clone = $("#" + description_template.content).clone();
+                                $('.cog-desc-content').append(clone);
+                            }
                         });   
                     })//end click
                     //set the first item to active
@@ -168,8 +172,8 @@
             this.eventListeners = function(){
                 var ApiTest =  function(data) {
                     if(data =="STOPPED"){
-                        console.log('stopped');
-                        console.log('place description 162');
+                        //console.log('stopped');
+                        //console.log('place description 173');
                         var current_item_index = CognexPlayer.getItemIdx();
                         CognexPlayer.description = CognexPlayer.config._playlist[current_item_index][0].title;
                         
@@ -206,11 +210,6 @@
             .done(function( script, textStatus ) {
                 $('head').append('<link rel="stylesheet" href="themes/maccaco/projekktor.style.css" type="text/css" media="screen">');
                 $('head').append('<link rel="stylesheet" href="cognex_player_style.css" type="text/css" media="screen">');
-                if(console){
-                    console.log( textStatus );        
-                }
-                
-                
                 //create_playlist_nav(player);
             })
             .fail(function( jqxhr, settings, exception ) {
