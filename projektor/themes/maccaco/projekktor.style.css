@@ -725,10 +725,11 @@ background: url("maccaco.png") no-repeat -91px top transparent;
 .ppstop{
     -webkit-user-select: none;
     margin: -20px 0 0 350px;
-    background: #3F3;
+    background: #fff;
     float: left;
     width: 10px;
     height:10px;
+    cursor:pointer;
 }
 .ppstop.inactive{
     display: block!important;

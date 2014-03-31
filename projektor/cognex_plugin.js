@@ -54,33 +54,33 @@
                             },
                             
                             {
-                            0: {src: "media/intro.ogv", type: "video/ogg", title: 'supercharged'},
-                            1: {src: "media/intro.mp4", type: "video/mp4", title: 'test2'},
-                            2: {src: "media/intro.webm", type: "video/webm", title: 'test2'},
+                            0: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/test1.ogv", type: "video/ogg", title: 'supercharged'},
+                            1: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/intro_.mp4", type: "video/mp4", title: 'test2'},
+                            2: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/intro.webm", type: "video/webm", title: 'test2'},
                             },
 
                             {
-                            0: {src: "media/test1.ogv", type: "video/ogg", title: 'introduction'},
-                            1: {src: "media/intro_.mp4", type: "video/mp4", title: 'test3'},
-                            2: {src: "media/intro.webm", type: "video/webm", title: 'test3'}
+                            0: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/test1.ogv", type: "video/ogg", title: 'introduction'},
+                            1: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/intro_.mp4", type: "video/mp4", title: 'test3'},
+                            2: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/intro.webm", type: "video/webm", title: 'test3'}
                             },
                             {
                             
-                            0: {src: "media/test1.ogv", type: "video/ogg", title: 'tenreasons'},
-                            1: {src: "media/intro_.mp4", type: "video/mp4", title: 'tenreasons'},
+                            0: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/test1.ogv", type: "video/ogg", title: 'tenreasons'},
+                            1: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/intro_.mp4", type: "video/mp4", title: 'tenreasons'},
                             2: {src: "media/intro.webm", type: "video/webm", title: 'tenreasons'}
                             },
                             {
                            
-                            0: {src: "media/test1.ogv", type: "video/ogg", title: 'multiple'},
-                            1: {src: "media/intro_.mp4", type: "video/mp4", title: 'multiple'},
-                            2: {src: "media/intro.webm", type: "video/webm", title: 'multiple'}
+                            0: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/test1.ogv", type: "video/ogg", title: 'multiple'},
+                            1: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/intro_.mp4", type: "video/mp4", title: 'multiple'},
+                            2: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/intro.webm", type: "video/webm", title: 'multiple'}
                             },
                             {
                             
-                            0: {src: "media/test1.ogv", type: "video/ogg", title: 'multiple'},
-                            1: {src: "media/intro_.mp4", type: "video/mp4", title: 'multiple'},
-                            2: {src: "media/intro.webm", type: "video/webm", title: 'multiple'}
+                            0: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/test1.ogv", type: "video/ogg", title: 'multiple'},
+                            1: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/intro_.mp4", type: "video/mp4", title: 'multiple'},
+                            2: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/intro.webm", type: "video/webm", title: 'multiple'}
                             }
 
                             ]    
