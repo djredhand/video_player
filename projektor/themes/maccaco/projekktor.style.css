@@ -426,13 +426,13 @@ height: 0px;
 /* previous / next item */
 .ppnext,
 .ppprev {
-    display:block;
+    display: block;
     background: url("maccaco.png") no-repeat -59px top transparent;
     width: 30px;
     height: 30px;
     cursor: pointer;
-    border-left:1px solid #413e3e;
-    border-right:1px solid #000;
+    border-left: 1px solid #413e3e;
+    border-right: 1px solid #413e3e;
 }
 .ppnext { 
     border-right: none;
@@ -448,6 +448,7 @@ height: 0px;
 .ppprev {
     background: url("maccaco.png") no-repeat -32px top transparent;
     margin: -30px 0 0 0px;
+    border-left: none !important;
 }
 
 .ppprev:hover {
