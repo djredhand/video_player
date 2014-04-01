@@ -212,7 +212,7 @@ controlbar plugin
     height: 30px;
     cursor: pointer;
     border-right: 1px solid #000;
-    margin: -42px 0 0 340px;
+    margin: -15px 0 0 30px;
 }
 
 .ppplay:hover {
@@ -249,7 +249,7 @@ controlbar plugin
     background: url("maccaco.png") no-repeat right top transparent;
     cursor: pointer;
     border-left: 1px solid #413e3e;
-    margin: -30px 0 0 430px;
+    margin: -30px 0 0 460px;
 }
 .ppfsenter:hover {
     background: url("maccaco.png") no-repeat right -35px transparent;
@@ -311,27 +311,29 @@ controlbar plugin
     background: url("maccaco.png") no-repeat -781px -13px transparent;
 }
 .volume-wrap{
-border: 5px solid #333;
+border: 5px solid #2c2d2d;
 width: 80px;
-background: #333;
-margin: 11px 0 0 0px;
+background: url("volume_icon.png")no-repeat #2c2d2d;
+background-position: 3px 4px;
+margin: 11px 0 0 6px;
 padding: 0;
 -webkit-border-radius: 5px;
 -moz-border-radius: 5px;
 border-radius: 5px;
-height: 27px;
+height: 29px;
+background-size: 12px;
 }
 .ppvslider.volume {
-    margin: 10px 5px 13px 10px;
-    height: 6px;
-    width: 60px;
-    background: #000;
-    -moz-border-radius-topright: 5px;
-    -webkit-border-top-right-radius: 5px;
-    border-top-right-radius: 5px;
-    -moz-border-radius-bottomright: 5px;
-    -webkit-border-bottom-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+    margin: 10px 5px 13px 20px;
+height: 6px;
+width: 50px;
+background: #000;
+-moz-border-radius-topright: 5px;
+-webkit-border-top-right-radius: 5px;
+border-top-right-radius: 5px;
+-moz-border-radius-bottomright: 5px;
+-webkit-border-bottom-right-radius: 5px;
+border-bottom-right-radius: 5px;
 }
 .ppvmarker {
     position: relative;
@@ -410,7 +412,15 @@ background: url("maccaco.png") no-repeat -91px top transparent;
     background: url("maccaco.png") no-repeat -32px -105px transparent;
 }
 
-
+.control-wrap{
+margin: -38px 0 0 350px;
+background: #2c2d2d;
+width: 117px;
+border: 2px solid #000;
+padding: 16px 0;
+border-radius: 5px;
+height: 0px;
+}
 
 
 /* previous / next item */
@@ -426,7 +436,7 @@ background: url("maccaco.png") no-repeat -91px top transparent;
 }
 .ppnext { 
     border-right: none;
-    margin: -30px 0 0 400px;
+    margin: -30px 0 0 90px;
 }
 .ppnext:hover {
     background: url("maccaco.png") no-repeat -59px -35px transparent;
@@ -437,7 +447,7 @@ background: url("maccaco.png") no-repeat -91px top transparent;
 
 .ppprev {
     background: url("maccaco.png") no-repeat -32px top transparent;
-    margin: -30px 0 0 310px;
+    margin: -30px 0 0 0px;
 }
 
 .ppprev:hover {
@@ -472,7 +482,7 @@ height: 6px;
 width: 190px;
 background: url("scrubber1") repeat-x left top transparent;
 left: 90px;
-margin: 5px 0 0 -6px;
+margin: 5px 0 0 14px;
 padding: 0;
 border: 17px solid #2c2d2d;
 top: 5px;
@@ -484,7 +494,7 @@ border-radius: 10px;
 }
 
 .pp-time{
-    margin: -26px 0 0 101px;
+    margin: -26px 0 0 119px;
     font-size: 9px;
     font-weight: normal;
     position: absolute;
@@ -688,7 +698,9 @@ border-bottom: 2px solid #333;
 .ppadoverlay.inactive {
     display: none;
 }
-
+.ppprev.inactive {
+    display: block!important;
+}
 
 /****************************
 /* Subtitles plugin specific */
@@ -757,7 +769,7 @@ border-bottom: 2px solid #333;
 }
 .ppstop{
     -webkit-user-select: none;
-    margin: -20px 0 0 380px;
+    margin: -20px 0 0 70px;
     background: #fff;
     float: left;
     width: 10px;
