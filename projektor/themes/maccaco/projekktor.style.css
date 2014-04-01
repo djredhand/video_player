@@ -249,7 +249,7 @@ controlbar plugin
     background: url("maccaco.png") no-repeat right top transparent;
     cursor: pointer;
     border-left: 1px solid #413e3e;
-    margin: -30px 0 0 460px;
+    margin: -30px 0 0 123px;
 }
 .ppfsenter:hover {
     background: url("maccaco.png") no-repeat right -35px transparent;
@@ -415,7 +415,7 @@ background: url("maccaco.png") no-repeat -91px top transparent;
 .control-wrap{
 margin: -38px 0 0 350px;
 background: #2c2d2d;
-width: 117px;
+width: 157px;
 border: 2px solid #000;
 padding: 16px 0;
 border-radius: 5px;
@@ -494,7 +494,7 @@ border-radius: 10px;
 }
 
 .pp-time{
-    margin: -26px 0 0 119px;
+    margin: -36px 0 0 119px;
     font-size: 9px;
     font-weight: normal;
     position: absolute;

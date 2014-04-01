@@ -45,11 +45,11 @@
                 autoplay: false,
                 description_template: {src: "descriptions.html", type:"text/html"},
                 playlist: [{
-                            0: {src: "media/hotbars/1.webm", 
+                            0: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/hotbars/1.webm", 
                                 type: "video/webm", title: 'Hotbars'},
-                            1: {src: "media/hotbars/1.webm", 
+                            1: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/hotbars/1.webm", 
                                 type: "video/webm", title: 'Hotbars'},
-                            2: {src: "media/hotbars/1.webm", 
+                            2: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/hotbars/1.webm", 
                                 type: "video/webm", title: 'Hotbars'},
                             },
                             

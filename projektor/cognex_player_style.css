@@ -31,8 +31,9 @@ html{
 	margin: 46px 10px 0 20px;
 	border: 4px solid #333;
 	padding: 9px;
-
+	width:640px;
 }
+
  br.clear{
  	clear:both;
  }
