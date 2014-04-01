@@ -1,6 +1,9 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700);
 html{
 	background: #333;
+	font-family: 'PT Sans', sans-serif;
 }
+
 #cognex-overlay{
 	width: 100%;
 	height: 100%;
@@ -20,10 +23,22 @@ html{
 }
 .cog-right-col{
 	float: left;
+	height: 441px;
+	margin: 46px 10px 0 20px;
+	border: 4px solid #333;
+	padding: 9px;
+
 }
+ br.clear{
+ 	clear:both;
+ }
 .cog-left-col{
 	float: left;
-	width: 160px;
+width: 198px;
+background: url('themes/maccaco/col-left-background.jpg') no-repeat;
+height: 820px;
+background-position-y: 0px;
+padding: 35px 0 0 51px;
 }
 .cog-vid-close-btn{
 	width: 66px;
@@ -34,29 +49,34 @@ html{
 	right: 0;
 }
 #player-container{
-	width: 820px;
-	margin: 50px auto;
+	width: 960px;
+	margin: 50px auto 0 auto;
+	background: #222;
 }
 .active-item{
-	background: #e2e2e2 !important;
+	background: #fff200 !important;
 }
 .active-item:hover{
-	background: #e2e2e2 !important;
+	background: #fff200 !important;
 }
 #cog-nav{
 	list-style-type: none;
-	width: 170px;
-	margin: 0;
+	width: 202px;
+	margin: 0 0 0 5px;
 	padding: 0;
 }
 li.cog-nav-item{
-	cursor: pointer;
-	padding-left: 10px;
-	background: #c4c4c4;
-	margin: 10px;
+cursor: pointer;
+padding-left: 7px;
+background: #7b7c7f;
+margin: 10px;
+font-weight: 600;
+color: #fff;
+font-size: 15px;
 }
 div.cog-item-title{
-	background: #999;
+	background: #4a4a4c;
+	padding-left: 2px;
 }
 .cog-item-title:hover{
 	background: #666;
@@ -68,7 +88,7 @@ div.cog-item-title{
 	-ms-user-select: none;      /* IE 10+ */
 }
 .cog-col-header{
-	background: yellow;
+	background: url('themes/maccaco/interactive_toolkit.jpg') no-repeat;
 	width: 100%;
-	height:35px;
+	height: 100px;
 }

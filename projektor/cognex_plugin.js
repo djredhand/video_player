@@ -2,10 +2,10 @@
         var CognexVideo = function(){
             this.itemIndex = 0,
             this.create_player_elm = function(template){
-                var left_col_header = $('<div class="cog-col-header">INTERACTIVE TOOL KIT</div>');
+                var left_col_header = $('<div class="cog-col-header"></div>');
                 var col_desc_content = $('<div class="cog-desc-content"/>');
                 var left_column = $('<div class="cog-left-col"></div>');
-                var right_column  = $('<div class="cog-right-col"></div>');
+                var right_column  = $('<div class="cog-right-col"></div><br class="clear"/>');
                 var player_container = $('<div id="player-container"></div>');
                 var player = $('<div id="cognex-player" class="projekktor"></div>');
                 var close_button = $('<div class="cog-vid-close-btn">X</div>');
@@ -40,7 +40,7 @@
                 playerFlashMP4: 'http://jamesemmettdesign.com/cognex_video/projektor/swf/StrobeMediaPlayback/StrobeMediaPlayback.swf',
                 playerFlashMP3: 'http://jamesemmettdesign.com/cognex_video/projektor/swf/StrobeMediaPlayback/StrobeMediaPlayback.swf',
                 width: 640,
-                height: 385,
+                height: 400,
                 controls: true,            // controls are disabled (inactive) if set to FALSE
                 autoplay: false,
                 description_template: {src: "descriptions.html", type:"text/html"},
@@ -72,6 +72,36 @@
                             },
                             {
                            
+                            0: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/test1.ogv", type: "video/ogg", title: 'multiple'},
+                            1: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/intro_.mp4", type: "video/mp4", title: 'multiple'},
+                            2: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/intro.webm", type: "video/webm", title: 'multiple'}
+                            },
+                            {
+                            
+                            0: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/test1.ogv", type: "video/ogg", title: 'multiple'},
+                            1: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/intro_.mp4", type: "video/mp4", title: 'multiple'},
+                            2: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/intro.webm", type: "video/webm", title: 'multiple'}
+                            },
+                            {
+                            
+                            0: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/test1.ogv", type: "video/ogg", title: 'multiple'},
+                            1: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/intro_.mp4", type: "video/mp4", title: 'multiple'},
+                            2: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/intro.webm", type: "video/webm", title: 'multiple'}
+                            },
+                            {
+                            
+                            0: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/test1.ogv", type: "video/ogg", title: 'multiple'},
+                            1: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/intro_.mp4", type: "video/mp4", title: 'multiple'},
+                            2: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/intro.webm", type: "video/webm", title: 'multiple'}
+                            },
+                            {
+                            
+                            0: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/test1.ogv", type: "video/ogg", title: 'multiple'},
+                            1: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/intro_.mp4", type: "video/mp4", title: 'multiple'},
+                            2: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/intro.webm", type: "video/webm", title: 'multiple'}
+                            },
+                            {
+                            
                             0: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/test1.ogv", type: "video/ogg", title: 'multiple'},
                             1: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/intro_.mp4", type: "video/mp4", title: 'multiple'},
                             2: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/intro.webm", type: "video/webm", title: 'multiple'}

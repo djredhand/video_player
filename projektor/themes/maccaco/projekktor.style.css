@@ -525,9 +525,17 @@ background: url("maccaco.png") no-repeat -91px top transparent;
     right: -3px;
     width: 15px;
     height: 8px;
-    background: rgb(187, 179, 179);
+    
     top: -2px;
     border-radius: 3px;
+    background: #1c1919; /* Old browsers */
+background: -moz-linear-gradient(left, #1c1919 2%, #4c4b4a 53%, #0a0809 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(2%,#1c1919), color-stop(53%,#4c4b4a), color-stop(100%,#0a0809)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left, #1c1919 2%,#4c4b4a 53%,#0a0809 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left, #1c1919 2%,#4c4b4a 53%,#0a0809 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left, #1c1919 2%,#4c4b4a 53%,#0a0809 100%); /* IE10+ */
+background: linear-gradient(to right, #1c1919 2%,#4c4b4a 53%,#0a0809 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1c1919', endColorstr='#0a0809',GradientType=1 ); /* IE6-9 */
 }
 
 .ppplayhead {
