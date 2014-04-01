@@ -199,6 +199,16 @@
                     $('.cog-nav-item').eq(0).addClass('active-item');
                 })    
             },
+            this.set_scrub = function(){
+                $(".ppplayhead").click(function(e){
+                    var parentOffset = $(this).offset(); 
+                    var relX = e.pageX - parentOffset.left;
+                    var relY = e.pageY - parentOffset.top;
+                    var seekTo = relX/$(this).parent().width();
+                    var duration = active_player.getDuration();
+                    active_player.setSeek(seekTo*duration);
+                });
+            }
             this.eventListeners = function(){
                 var ApiTest =  function(data) {
                     if(data =="STOPPED"){
@@ -229,6 +239,7 @@
                 this.add_navigation(player);
                 this.eventListeners();
                 this.place_description(CognexPlayer, 0);
+                this.set_scrub();
                 // clean up
                 $('.player-instance').eq(1).remove();
             }
