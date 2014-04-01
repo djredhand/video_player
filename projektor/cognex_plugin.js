@@ -6,8 +6,8 @@
                 var col_desc_content = $('<div class="cog-desc-content"/>');
                 var left_column = $('<div class="cog-left-col"></div>');
                 var right_column  = $('<div class="cog-right-col"></div><br class="clear"/>');
-                var player_container = $('<div id="player-container"></div>');
-                var player = $('<div id="cognex-player" class="projekktor"></div>');
+                var player_container = $('<div id="player-container" class="container-instance"></div>');
+                var player = $('<div id="cognex-player" class="projekktor player-instance"></div>');
                 var close_button = $('<div class="cog-vid-close-btn">X</div>');
                 var ajax_content = $('<div id="ajax-content"/>');
                 var overlay = $('<div id="cognex-overlay"></div>');
@@ -199,6 +199,17 @@
                     $('.cog-nav-item').eq(0).addClass('active-item');
                 })    
             },
+            this.player_scrub_grab = function(){
+                function myFunction(){
+                    console.log('my function')
+                }
+                var timeoutId = 0;
+                $('.head-grab').mousedown(function() {
+                    timeoutId = setTimeout(myFunction, 1000);
+                }).bind('mouseup mouseleave', function() {
+                    clearTimeout(timeoutId);
+                });
+            },
             this.eventListeners = function(){
                 var ApiTest =  function(data) {
                     if(data =="STOPPED"){
@@ -229,6 +240,9 @@
                 this.add_navigation(player);
                 this.eventListeners();
                 this.place_description(CognexPlayer, 0);
+                // clean up
+                $('.player-instance').eq(1).remove()
+                this.player_scrub_grab();
             }
             //IE bug with navigation being created again after end of last video. 
             if($("#cog-nav").length==0){ 

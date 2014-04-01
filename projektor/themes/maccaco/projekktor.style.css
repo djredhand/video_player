@@ -114,7 +114,7 @@ controlbar plugin
     right:0;
     display: block;
     width: 100%;
-    height: 36px;
+    height: 57px;
     background: #2e2d2d; /* Old browsers */
     background: -moz-linear-gradient(top,  #2e2d2d 0%, #0f0e0e 100%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2e2d2d), color-stop(100%,#0f0e0e)); /* Chrome,Safari4+ */
@@ -212,7 +212,7 @@ controlbar plugin
     height: 30px;
     cursor: pointer;
     border-right: 1px solid #000;
-    margin: -42px 0 0 310px;
+    margin: -42px 0 0 340px;
 }
 
 .ppplay:hover {
@@ -249,7 +249,7 @@ controlbar plugin
     background: url("maccaco.png") no-repeat right top transparent;
     cursor: pointer;
     border-left: 1px solid #413e3e;
-    margin: -30px 0 0 400px;
+    margin: -30px 0 0 430px;
 }
 .ppfsenter:hover {
     background: url("maccaco.png") no-repeat right -35px transparent;
@@ -305,7 +305,7 @@ controlbar plugin
 
 /* volume slider - right */
 .ppvslider {
-    margin: 13px 5px;
+    margin: 30px 5px 13px 10px;;
     height: 16px;
     width: 60px;
     background: url("maccaco.png") no-repeat -781px -13px transparent;
@@ -397,7 +397,7 @@ background: url("maccaco.png") no-repeat -91px top transparent;
 }
 .ppnext { 
     border-right: none;
-    margin: -30px 0 0 370px;
+    margin: -30px 0 0 400px;
 }
 .ppnext:hover {
     background: url("maccaco.png") no-repeat -59px -35px transparent;
@@ -408,7 +408,7 @@ background: url("maccaco.png") no-repeat -91px top transparent;
 
 .ppprev {
     background: url("maccaco.png") no-repeat -32px top transparent;
-    margin: -30px 0 0 280px;
+    margin: -30px 0 0 310px;
 }
 
 .ppprev:hover {
@@ -438,15 +438,16 @@ background: url("maccaco.png") no-repeat -91px top transparent;
 
 /* Scrubber, Playhead and fluff */
 .ppscrubber {
-    position: absolute;
-    height: 5px;
-    width: 130px;
-    background: url("scrubber1") repeat-x left top transparent;
-    left: 90px;
-    margin: 4px 0 0 -6px;;
-    padding: 0;
-    border-bottom: 1px solid #000;
-    top: 13px;
+position: absolute;
+height: 6px;
+width: 190px;
+background: url("scrubber1") repeat-x left top transparent;
+left: 90px;
+margin: 5px 0 0 -6px;
+padding: 0;
+border: 17px solid #2c2d2d;
+top: 5px;
+border-radius: 10px;
     }
 
 .audio .ppscrubber {
@@ -454,26 +455,29 @@ background: url("maccaco.png") no-repeat -91px top transparent;
 }
 
 .pp-time{
-    margin: -30px 0 0 90px;
+    margin: -36px 0 0 101px;
     font-size: 9px;
     font-weight: normal;
+    position: absolute;
 }
 .ppmin_elp{
-    margin: 0 0 0 -11px;
+    margin: 0 0 0 -7px;
 }
 .ppmin_dur{
-    margin: 0 0 0 90px;
+    margin: 0 0 0 155px;
 }
 
 .ppscrubberdrag {
     cursor: pointer;
-    z-index: 302;
-    position: absolute;
-    background-color: transparent;    
-    top:0;
-    left:0;
-    height: 5px;
-    width: 200px;    
+z-index: 301;
+position: absolute;
+background-color: #222;
+top: 0px;
+left: 0;
+height: 5px;
+width: 192px;
+border-radius: 45px;
+border-bottom: 2px solid #333; 
 }
 
 .ppplayhead, .pploaded {
@@ -483,7 +487,7 @@ background: url("maccaco.png") no-repeat -91px top transparent;
     bottom: 0;
     height: 5px;
     width: 1px;
-    background-color:#fff;
+    background-color:#fff200;
     cursor: pointer;
     z-index: 301;
     -webkit-backface-visibility: hidden;
@@ -491,7 +495,8 @@ background: url("maccaco.png") no-repeat -91px top transparent;
     -webkit-transition: width 0.1s linear;
     -moz-transition: width 0.1s linear;
     -o-transition: width 0.1s linear;
-    transition: width 0.1s linear;        
+    transition: width 0.1s linear; 
+    border-radius: 15px;       
 }
 
 .ppcuepoint {
@@ -512,30 +517,23 @@ background: url("maccaco.png") no-repeat -91px top transparent;
 }
 
 .pploaded {
-    width: 100%!important;
     position: relative;    
     z-index: 10;
     background: rgb(65, 62, 62) ;
+    border-radius: 15px;
     opacity: 0.8;
     filter: alpha(opacity = 80);
     -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
 }
 .head-grab{
     position: absolute;
-    right: -3px;
+    right: -15px;
     width: 15px;
-    height: 8px;
-    
+    height: 11px;
+
     top: -2px;
-    border-radius: 3px;
-    background: #1c1919; /* Old browsers */
-background: -moz-linear-gradient(left, #1c1919 2%, #4c4b4a 53%, #0a0809 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, right top, color-stop(2%,#1c1919), color-stop(53%,#4c4b4a), color-stop(100%,#0a0809)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(left, #1c1919 2%,#4c4b4a 53%,#0a0809 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(left, #1c1919 2%,#4c4b4a 53%,#0a0809 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(left, #1c1919 2%,#4c4b4a 53%,#0a0809 100%); /* IE10+ */
-background: linear-gradient(to right, #1c1919 2%,#4c4b4a 53%,#0a0809 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1c1919', endColorstr='#0a0809',GradientType=1 ); /* IE6-9 */
+    
+    background: url(scrub_head.png) no-repeat;
 }
 
 .ppplayhead {
@@ -732,7 +730,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1c1919', end
 }
 .ppstop{
     -webkit-user-select: none;
-    margin: -20px 0 0 350px;
+    margin: -20px 0 0 380px;
     background: #fff;
     float: left;
     width: 10px;
