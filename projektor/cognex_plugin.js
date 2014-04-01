@@ -199,17 +199,6 @@
                     $('.cog-nav-item').eq(0).addClass('active-item');
                 })    
             },
-            this.player_scrub_grab = function(){
-                function myFunction(){
-                    console.log('my function')
-                }
-                var timeoutId = 0;
-                $('.head-grab').mousedown(function() {
-                    timeoutId = setTimeout(myFunction, 1000);
-                }).bind('mouseup mouseleave', function() {
-                    clearTimeout(timeoutId);
-                });
-            },
             this.eventListeners = function(){
                 var ApiTest =  function(data) {
                     if(data =="STOPPED"){
@@ -241,8 +230,7 @@
                 this.eventListeners();
                 this.place_description(CognexPlayer, 0);
                 // clean up
-                $('.player-instance').eq(1).remove()
-                this.player_scrub_grab();
+                $('.player-instance').eq(1).remove();
             }
             //IE bug with navigation being created again after end of last video. 
             if($("#cog-nav").length==0){ 
