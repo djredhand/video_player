@@ -40,16 +40,16 @@
                 playerFlashMP4: 'http://jamesemmettdesign.com/cognex_video/projektor/swf/StrobeMediaPlayback/StrobeMediaPlayback.swf',
                 playerFlashMP3: 'http://jamesemmettdesign.com/cognex_video/projektor/swf/StrobeMediaPlayback/StrobeMediaPlayback.swf',
                 width: 640,
-                height: 400,
+                height: 480,
                 controls: true,            // controls are disabled (inactive) if set to FALSE
                 autoplay: false,
                 description_template: {src: "descriptions.html", type:"text/html"},
                 playlist: [{
-                            0: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/test1.ogv", 
-                                type: "video/ogg", title: 'Hotbars'},
-                            1: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/intro_.mp4", 
-                                type: "video/mp4", title: 'Hotbars'},
-                            2: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/intro.webm", 
+                            0: {src: "media/hotbars/1.webm", 
+                                type: "video/webm", title: 'Hotbars'},
+                            1: {src: "media/hotbars/1.webm", 
+                                type: "video/webm", title: 'Hotbars'},
+                            2: {src: "media/hotbars/1.webm", 
                                 type: "video/webm", title: 'Hotbars'},
                             },
                             
@@ -208,7 +208,7 @@
                     var duration = active_player.getDuration();
                     active_player.setSeek(seekTo*duration);
                 });
-            }
+            },
             this.eventListeners = function(){
                 var ApiTest =  function(data) {
                     if(data =="STOPPED"){

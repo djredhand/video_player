@@ -23,7 +23,7 @@ html{
 }
 .cog-right-col{
 	float: left;
-	height: 441px;
+	height: 480px;
 	margin: 46px 10px 0 20px;
 	border: 4px solid #333;
 	padding: 9px;
@@ -93,4 +93,13 @@ div.cog-item-title{
 	background: url('themes/maccaco/interactive_toolkit.jpg') no-repeat;
 	width: 100%;
 	height: 100px;
+}
+#cognex-player_media_image{
+	height: 100%!important;
+	top: 0!important;
+}
+.ppcontrols{
+	background: none !important;
+	border: none!important;
+	bottom: 55px !important;
 }
