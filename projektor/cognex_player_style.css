@@ -5,7 +5,7 @@ html{
 
 #cognex-overlay{
 	width: 100%;
-	height: 100%;
+	height: 110%;
 	background:url('themes/maccaco/overlay_bg.png');
 	position: absolute;
 	top: 0;
@@ -45,13 +45,15 @@ background-position-y: 0px;
 padding: 35px 0 0 51px;
 }
 .cog-vid-close-btn{
-	width: 66px;
-	height: 22px;
-	color: #fff;
-	font-weight: bold;
+	background: url('themes/maccaco/close_btn.png') no-repeat;
+	cursor: pointer;
+	width: 50px;
+	height: 44px;
+	position: relative;
+	margin: -8px 0 -44px 940px;
+	background-size: 27px;
+	background-position-y: 0px;
 	position: absolute;
-	top: 0;
-	right: 0;
 }
 #player-container{
 	width: 960px;
@@ -87,12 +89,6 @@ div.cog-item-title{
 .cog-item-title:hover{
 	background: #666;
 }
-.cog-vid-close-btn{
-	cursor: pointer;	
-	-webkit-user-select: none;  /* Chrome all / Safari all */
-	-moz-user-select: none;     /* Firefox all */
-	-ms-user-select: none;      /* IE 10+ */
-}
 .cog-col-header{
 	background: url('themes/maccaco/interactive_toolkit2.jpg') no-repeat;
 	width: 100%;
@@ -106,4 +102,22 @@ div.cog-item-title{
 	background: none !important;
 	border: none!important;
 	bottom: 55px !important;
+}
+p.indent{
+	margin:0 0 0 25px;
+}
+.cognex-content{
+	color:#fff;
+	font-size: 14px;
+}
+.cognex-content.view-btn{
+	position: absolute;
+	margin: 340px 0 0 33px;
+}
+#cognex-view-btn{
+	background: url('themes/maccaco/view_btn.png') no-repeat;
+	width: 81px;
+	height: 32px;
+	margin: 16px 0 0 22px;
+	cursor:pointer;
 }
