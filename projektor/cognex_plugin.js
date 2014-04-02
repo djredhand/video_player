@@ -48,133 +48,166 @@
                 playlist: [{
                             0: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/hotbars/1.webm", 
                                 type: "video/webm", 
-                                title: 'Hotbars'},
+                                title: 'Hotbars',
+                                navItem: "Hotbars"},
                             1: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/hotbars/1.webm", 
                                 type: "video/webm", 
-                                title: 'Hotbars'},
+                                title: 'Hotbars',
+                                navItem: "Hotbars"},
                             2: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/hotbars/1.webm", 
                                 type: "video/webm", 
-                                title: 'Hotbars'},
+                                title: 'Hotbars',
+                                navItem: "Hotbars"}
                             },
                             
                             {
                             0: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/hotbars/1.webm", 
                                 type: "video/ogg", 
-                                title: 'DataMan-Eight'},
+                                title: 'DataMan-Eight',
+                                navItem: "Hotbars"},
                             1: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/hotbars/1.webm", 
                                 type: "video/mp4", 
-                                title: 'DataMan-Eight'},
+                                title: 'DataMan-Eight',
+                                navItem: "Hotbars"},
                             2: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/hotbars/1.webm", 
                                 type: "video/webm", 
-                                title: 'DataMan-Eight'},
+                                title: 'DataMan-Eight',
+                                navItem: "Hotbars"},
                             },
 
                             {
                             0: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/hotbars/1.webm", 
                                 type: "video/ogg", 
-                                title: 'Supercharged'},
+                                title: 'Supercharged',
+                                navItem: "Hotbars"},
                             1: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/hotbars/1.webm", 
                                 type: "video/mp4", 
-                                title: 'Supercharged'},
+                                title: 'Supercharged',
+                                navItem: "Hotbars"},
                             2: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/hotbars/1.webm", 
                                 type: "video/webm", 
-                                title: 'Supercharged'}
+                                title: 'Supercharged',
+                                navItem: "Hotbars"}
                             },
                             {
                             
                             0: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/hotbars/1.webm", 
                                 type: "video/ogg", 
-                                title: 'Introduction'},
+                                title: 'Introduction',
+                                navItem: "Hotbars"},
                             1: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/hotbars/1.webm", 
                                 type: "video/mp4", 
-                                title: 'Introduction'},
+                                title: 'Introduction',
+                                navItem: "Hotbars"},
                             2: {src: "media/intro.webm", 
                                 type: "video/webm", 
-                                title: 'Introduction'}
+                                title: 'Introduction',
+                                navItem: "Hotbars"}
                             },
                             {
                            
                             0: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/hotbars/1.webm", 
                                 type: "video/ogg", 
-                                title: 'Ten-Reasons'},
+                                title: 'Ten-Reasons',
+                                navItem: "Hotbars"},
                             1: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/hotbars/1.webm", 
                                 type: "video/mp4", 
-                                title: 'Ten-Reasons'},
+                                title: 'Ten-Reasons',
+                                navItem: "Hotbars"},
                             2: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/hotbars/1.webm", 
                                 type: "video/webm", 
-                                title: 'Ten-Reasons'}
+                                title: 'Ten-Reasons',
+                                navItem: "Hotbars"}
                             },
                             {
                             
                             0: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/hotbars/1.webm", 
                                 type: "video/ogg", 
-                                title: 'Multiple'},
-                            1: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/hotbars/1.webm", 
-                             type: "video/mp4", 
-                                title: 'Multiple'},
-                            2: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/hotbars/1.webm", 
-                                type: "video/webm", 
-                                title: 'Multiple'}
-                            },
-                            {
-                            
-                            0: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/hotbars/1.webm", 
-                                type: "video/ogg", 
-                                title: 'Barcode'},
+                                title: 'Multiple',
+                                navItem: "Hotbars"},
                             1: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/hotbars/1.webm", 
                                 type: "video/mp4", 
-                                title: 'Barcode'},
+                                title: 'Multiple',
+                                navItem: "Hotbars"},
                             2: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/hotbars/1.webm", 
                                 type: "video/webm", 
-                                title: 'Barcode'}
+                                title: 'Multiple',
+                                navItem: "Hotbars"}
                             },
                             {
                             
                             0: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/hotbars/1.webm", 
                                 type: "video/ogg", 
-                                title: 'Why-You-Need'},
+                                title: 'Barcode',
+                                navItem: "Hotbars"},
                             1: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/hotbars/1.webm", 
                                 type: "video/mp4", 
-                                title: 'Why-You-Need'},
+                                title: 'Barcode',
+                                navItem: "Hotbars"},
                             2: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/hotbars/1.webm", 
                                 type: "video/webm", 
-                                title: 'Why-You-Need'}
+                                title: 'Barcode',
+                                navItem: "Hotbars"}
                             },
                             {
                             
                             0: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/hotbars/1.webm", 
                                 type: "video/ogg", 
-                                title: 'Dataman-Fifty'},
+                                title: 'Why-You-Need',
+                                navItem: "Hotbars"},
+                            1: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/hotbars/1.webm", 
+                                type: "video/mp4", 
+                                title: 'Why-You-Need',
+                                navItem: "Hotbars"},
+                            2: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/hotbars/1.webm", 
+                                type: "video/webm", 
+                                title: 'Why-You-Need',
+                                navItem: "Hotbars"}
+                            },
+                            {
+                            
+                            0: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/hotbars/1.webm", 
+                                type: "video/ogg", 
+                                title: 'Dataman-Fifty',
+                                navItem: "Hotbars"},
                             1: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/hotbars/1.webm", 
                                 type: "video/mp4",
-                                title: 'Dataman-Fifty'},
+                                title: 'Dataman-Fifty',
+                                navItem: "Hotbars"},
                             2: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/hotbars/1.webm", 
                                 type: "video/webm", 
-                                title: 'Dataman-Fifty'}
+                                title: 'Dataman-Fifty',
+                                navItem: "Hotbars"}
                             },
                             {
                             
                             0: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/hotbars/1.webm", 
                                 type: "video/ogg", 
-                                title: 'Dataman-Three'},
+                                title: 'Dataman-Three',
+                                navItem: "Hotbars"},
                             1: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/hotbars/1.webm", 
                                 type: "video/mp4", 
-                                title: 'Dataman-Three'},
+                                title: 'Dataman-Three',
+                                navItem: "Hotbars"},
                             2: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/hotbars/1.webm", 
                                 type: "video/webm", 
-                                title: 'Dataman-Three'}
+                                title: 'Dataman-Three',
+                                navItem: "Hotbars"}
                             },
                             {
                             
                             0: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/hotbars/1.webm", 
                                 type: "video/ogg", 
-                                title: 'Integrating'},
+                                title: 'Integrating',
+                                navItem: "Hotbars"},
                             1: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/hotbars/1.webm", 
                                 type: "video/mp4", 
-                                title: 'Integrating'},
+                                title: 'Integrating',
+                                navItem: "Hotbars"},
                             2: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/hotbars/1.webm", 
                                 type: "video/webm", 
-                                title: 'Integrating'}
+                                title: 'Integrating',
+                                navItem: "Hotbars"}
                             }
 
                             ]    
@@ -235,7 +268,7 @@
                         num = '0' + num;
                     }
                     var list_item = $('<li class="cog-nav-item"><div class="cog-item-title"><span>'
-                                        +num+' </span>'+ this[0].title +'</div></li>');
+                                        +num+' </span>'+ this[0].navItem +'</div></li>');
                     nav.append(list_item);
                     window.active_player = player;
                     list_item.click(function(){
