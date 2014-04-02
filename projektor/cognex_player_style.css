@@ -47,8 +47,8 @@ padding: 35px 0 0 51px;
 .cog-vid-close-btn{
 	background: url('themes/maccaco/close_btn.png') no-repeat;
 	cursor: pointer;
-	width: 50px;
-	height: 44px;
+	width: 27px;
+	height: 27px;
 	position: relative;
 	margin: -8px 0 -44px 940px;
 	background-size: 27px;
