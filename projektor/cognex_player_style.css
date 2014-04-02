@@ -85,6 +85,9 @@ font-size: 13px;
 div.cog-item-title{
 	background: #4a4a4c;
 	padding-left: 2px;
+	 -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
 }
 .cog-item-title:hover{
 	background: #666;
