@@ -124,3 +124,6 @@ p.indent{
 	margin: 16px 0 0 22px;
 	cursor:pointer;
 }
+.cognex-content-p{
+	font-size: 12px;
+}
