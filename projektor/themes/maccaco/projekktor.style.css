@@ -211,8 +211,8 @@ controlbar plugin
     width: 30px;
     height: 30px;
     cursor: pointer;
-    border-right: 1px solid #000;
-    margin: -15px 0 0 30px;
+    border-right: 1px solid #222;
+    margin: -15px 0 0 29px;
 }
 
 .ppplay:hover {
@@ -248,8 +248,8 @@ controlbar plugin
     height: 30px;
     background: url("maccaco.png") no-repeat right top transparent;
     cursor: pointer;
-    border-left: 1px solid #413e3e;
-    margin: -30px 0 0 123px;
+    border-left: 1px solid #222;
+    margin: -30px 0 0 121px;
 }
 .ppfsenter:hover {
     background: url("maccaco.png") no-repeat right -35px transparent;
@@ -413,13 +413,13 @@ background: url("maccaco.png") no-repeat -91px top transparent;
 }
 
 .control-wrap{
-margin: -38px 0 0 350px;
+margin: -38px 0 0 336px;
 background: #2c2d2d;
-width: 157px;
+width: 152px;
 border: 2px solid #000;
-padding: 16px 0;
+padding: 15px 0;
 border-radius: 5px;
-height: 0px;
+height: 0px
 }
 
 
@@ -431,8 +431,8 @@ height: 0px;
     width: 30px;
     height: 30px;
     cursor: pointer;
-    border-left: 1px solid #413e3e;
-    border-right: 1px solid #413e3e;
+    border-left: 1px solid #222;
+    border-right: 1px solid #222;
 }
 .ppnext { 
     border-right: none;
@@ -770,12 +770,15 @@ border-bottom: 2px solid #333;
 }
 .ppstop{
     -webkit-user-select: none;
-    margin: -20px 0 0 70px;
-    background: #fff;
-    float: left;
-    width: 10px;
-    height:10px;
-    cursor:pointer;
+    margin: -30px 0 0 60px;
+float: left;
+background: url("maccaco.png") no-repeat -86px top transparent;
+width: 30px;
+height: 30px;
+cursor: pointer;
+}
+.ppstop:hover{
+background: url("maccaco.png") no-repeat -86px -35px transparent;
 }
 .ppstop.inactive{
     display: block!important;
