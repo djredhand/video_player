@@ -136,15 +136,15 @@
                             },
                             {
                             
-                            0: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/hotbars/1.webm", 
+                            0: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/barcode/7.webm", 
                                 type: "video/ogg", 
                                 contentTitle: 'Barcode',
                                 navItem: "3 Barcode Reader Features"},
-                            1: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/hotbars/1.webm", 
+                            1: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/barcode/7.webm", 
                                 type: "video/mp4", 
                                 contentTitle: 'Barcode',
                                 navItem: "3 Barcode Reader Features"},
-                            2: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/hotbars/1.webm", 
+                            2: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/barcode/7.webm", 
                                 type: "video/webm", 
                                 contentTitle: 'Barcode',
                                 navItem: "3 Barcode Reader Features"}
