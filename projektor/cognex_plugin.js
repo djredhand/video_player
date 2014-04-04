@@ -166,15 +166,15 @@
                             },
                             {
                             
-                            0: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/hotbars/1.webm", 
+                            0: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/dataman_50/9.webm", 
                                 type: "video/ogg", 
                                 contentTitle: 'Dataman-Fifty',
                                 navItem: "DataMan 50L"},
-                            1: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/hotbars/1.webm", 
+                            1: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/dataman_50/9.webm", 
                                 type: "video/mp4",
                                 contentTitle: 'Dataman-Fifty',
                                 navItem: "DataMan 50L"},
-                            2: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/hotbars/1.webm", 
+                            2: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/dataman_50/9.webm", 
                                 type: "video/webm", 
                                 contentTitle: 'Dataman-Fifty',
                                 navItem: "DataMan 50L"}
