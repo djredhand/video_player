@@ -12,6 +12,9 @@
                 var ajax_content = $('<div id="ajax-content"/>');
                 var overlay = $('<div id="cognex-overlay"></div>');
                 var view_btn = $('<div class="cognex-content view-btn">View additional info<div id="cognex-view-btn"></div></div>');
+                var contact_btn = $('<div class="cognex-content contact-btn"><a target="_blank" href="http://www.cognex.com/Home/ContactUs.aspx"><div id="cognex-contact-btn"></div></a></div>');
+                var demo_btn = $('<div class="cognex-content demo-btn"><a target="_blank" href="http://www.cognex.com/contact-demo.aspx?cm_campid=43BBC0AC-1C17-E311-A060-5EF3FCDAF1B7"><div id="cognex-demo-btn"></div></a></div>');
+                var pricing_btn = $('<div class="cognex-content pricing-btn"><a target="_blank" href="http://www.cognex.com/contact-pricing.aspx?cm_campid=6FEAE2C5-1C17-E311-A060-5EF3FCDAF1B7"><div id="cognex-pricing-btn"></div></a></div>');
                 var winHeight = $(document).height();
                 
                 //overlay.height(winHeight);
@@ -20,7 +23,7 @@
                 overlay.append(player_container);
                 player_container.append(close_button,left_column,right_column);
                 player.append(template)
-                right_column.append(col_desc_content, player);
+                right_column.append(col_desc_content, player, demo_btn, pricing_btn, contact_btn);
                 
 
                 $('.cog-vid-close-btn').click(function(){
@@ -40,7 +43,7 @@
                 title: 'this is projekktor',
                 playerFlashMP4: 'http://jamesemmettdesign.com/cognex_video/projektor/swf/StrobeMediaPlayback/StrobeMediaPlayback.swf',
                 playerFlashMP3: 'http://jamesemmettdesign.com/cognex_video/projektor/swf/StrobeMediaPlayback/StrobeMediaPlayback.swf',
-                width: 640,
+                width: 710,
                 height: 480,
                 controls: true,            // controls are disabled (inactive) if set to FALSE
                 autoplay: false,
