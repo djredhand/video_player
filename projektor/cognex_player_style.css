@@ -161,3 +161,40 @@ p.indent{
 .cognex-content-p{
 	font-size: 14px;
 }
+.underline{
+	font-weight: bold;
+	text-decoration: underline;
+}
+.cognex-content-col{
+	width: 220px;
+	float: left;
+	min-height: 200px;
+	margin: 42px 0 0 0;
+	font-size: 10px;
+}
+br.clear-col{
+	clear:both;
+}
+#Download-Center{
+	width: 660px;
+}
+
+h4.cognex-content-title{
+	font-size: 20px;
+	background: #ff0;
+	position: absolute;
+	margin: -9px 0 0 -25px;
+	width: 710px;
+	height: 35px;
+	text-align: center;
+	padding: 10px 0 0 0;
+}
+ul.datasheet{
+	padding: 0;
+	margin: 0 0 7px 15px;
+}
+ul.datasheet li span{
+	position: relative;
+	margin: 0 0 0 0px;
+	width: 160px;
+}
