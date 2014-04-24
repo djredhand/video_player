@@ -348,7 +348,7 @@
 
                             window.myVar=setInterval(function(){
                                 myTimer();
-                            },10);
+                            },5);
 
                             function myTimer(){
                                 console.log("time")
