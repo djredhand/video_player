@@ -39,7 +39,7 @@
             },
             this.init_player = function(){
                 projekktor('#cognex-player', {
-                poster: 'media/poster.jpg',
+                poster: 'media/poster_.jpg',
                 title: 'this is projekktor',
                 playerFlashMP4: 'http://jamesemmettdesign.com/cognex_video/projektor/swf/StrobeMediaPlayback/StrobeMediaPlayback.swf',
                 playerFlashMP3: 'http://jamesemmettdesign.com/cognex_video/projektor/swf/StrobeMediaPlayback/StrobeMediaPlayback.swf',
@@ -338,6 +338,7 @@
                 $('#cognex-view-btn').click(function(){
                     if($(this).hasClass('active')){
                         active_player.setStop();
+                        $(this).removeClass('active');
                         var current_item_index = CognexPlayer.getItemIdx();
                         CognexPlayer.description = CognexPlayer.config._playlist[current_item_index][0].contentTitle;
                         $("#ajax-content").load(CognexPlayer.config.description_template.src, function(){
@@ -347,8 +348,9 @@
                         });
                         return;
                     }
-                    $(this).addClass('active');
                     active_player.setStop();
+                    $(this).addClass('active');
+                    
                     $('#cognex-view-btn').trigger('click');
                 })
             },
