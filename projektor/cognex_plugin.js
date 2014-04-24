@@ -199,15 +199,15 @@
                             },
                             {
                             
-                            0: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/hotbars/1.webm", 
+                            0: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/ethernet/Ethernet-Based.ogv", 
                                 type: "video/ogg", 
                                 contentTitle: 'Download-Center',
                                 navItem: "Integrating ID Readers"},
-                            1: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/hotbars/1.webm", 
+                            1: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/ethernet/Ethernet-Based.mp4", 
                                 type: "video/mp4", 
                                 contentTitle: 'Download-Center',
                                 navItem: "Integrating ID Readers"},
-                            2: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/hotbars/1.webm", 
+                            2: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/ethernet/Ethernet-Based.webm", 
                                 type: "video/webm", 
                                 contentTitle: 'Download-Center',
                                 navItem: "Integrating ID Readers"}
