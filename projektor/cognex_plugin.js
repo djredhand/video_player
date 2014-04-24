@@ -338,13 +338,34 @@
                 $('#cognex-view-btn').click(function(){
                     if($(this).hasClass('active')){
                         active_player.setStop();
-                        $(this).removeClass('active');
+                        //$(this).removeClass('active');
                         var current_item_index = CognexPlayer.getItemIdx();
                         CognexPlayer.description = CognexPlayer.config._playlist[current_item_index][0].contentTitle;
                         $("#ajax-content").load(CognexPlayer.config.description_template.src, function(){
                             $(".cog-desc-content").empty();
                             var clone = $("#Download-Center").clone();
                             $('.cog-desc-content').append(clone);
+
+                            window.myVar=setInterval(function(){
+                                myTimer();
+                            },10);
+
+                            function myTimer(){
+                                console.log("time")
+                                if($('#Download-Center.active')){
+                                    console.log("exists!");
+
+                                    $("#ajax-content").load(CognexPlayer.config.description_template.src, function(){
+                                        $(".cog-desc-content").empty();
+                                        var clone = $("#Download-Center").clone();
+                                        $('.cog-desc-content').append(clone);
+
+                                        window.clearInterval(myVar);
+                                    })
+
+                                }
+                            }
+
                         });
                         return;
                     }
@@ -352,6 +373,9 @@
                     $(this).addClass('active');
                     
                     $('#cognex-view-btn').trigger('click');
+                })
+                $('#cognex-view-btn.active').on(function(){
+                    alert('assa')
                 })
             },
             this.init = function(){
