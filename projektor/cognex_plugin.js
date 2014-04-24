@@ -39,7 +39,7 @@
             },
             this.init_player = function(){
                 projekktor('#cognex-player', {
-                poster: 'media/poster_.jpg',
+                poster: 'media/poster.jpg',
                 title: 'this is projekktor',
                 playerFlashMP4: 'http://jamesemmettdesign.com/cognex_video/projektor/swf/StrobeMediaPlayback/StrobeMediaPlayback.swf',
                 playerFlashMP3: 'http://jamesemmettdesign.com/cognex_video/projektor/swf/StrobeMediaPlayback/StrobeMediaPlayback.swf',
@@ -51,169 +51,168 @@
                 playlist: [{
                             0: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/hotbars/1.webm", 
                                 type: "video/webm", 
-                                contentTitle: 'Download-Center',
+                                contentTitle: 'Hotbars',
                                 navItem: "Hotbars"},
                             1: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/hotbars/1.ogv", 
                                 type: "video/ogv", 
-                                contentTitle: 'Download-Center',
+                                contentTitle: 'Hotbars',
                                 navItem: "Hotbars"},
                             2: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/hotbars/1.mp4", 
                                 type: "video/mp4", 
-                                contentTitle: 'Download-Center',
+                                contentTitle: 'Hotbars',
                                 navItem: "Hotbars"}
                             },
                             
                             {
                             0: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/hotbars/1.webm", 
                                 type: "video/ogg", 
-                                contentTitle: 'Download-Center',
+                                contentTitle: 'DataMan-Eight',
                                 navItem: "DataMan 8000"},
                             1: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/hotbars/1.webm", 
                                 type: "video/mp4", 
-                                contentTitle: 'Download-Center',
+                                contentTitle: 'DataMan-Eight',
                                 navItem: "DataMan 8000"},
                             2: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/hotbars/1.webm", 
                                 type: "video/webm", 
-                                contentTitle: 'Download-Center',
+                                contentTitle: 'DataMan-Eight',
                                 navItem: "DataMan 8000"},
                             },
 
                             {
                             0: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/supercharged/3.webm", 
                                 type: "video/ogg", 
-                                contentTitle: 'Download-Center',
+                                contentTitle: 'Supercharged',
                                 navItem: "Supercharged ID"},
                             1: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/supercharged/3.webm", 
                                 type: "video/mp4", 
-                                contentTitle: 'Download-Center',
+                                contentTitle: 'Supercharged',
                                 navItem: "Supercharged ID"},
                             2: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/supercharged/3.webm", 
                                 type: "video/webm", 
-                                contentTitle: 'Download-Center',
+                                contentTitle: 'Supercharged',
                                 navItem: "Supercharged ID"}
                             },
                             {
                             
                             0: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/dpm/TwoBolt-Powerpoint-PartTraceability-Final.ogv", 
                                 type: "video/ogg", 
-                                contentTitle: 'Download-Center',
+                                contentTitle: 'Introduction',
                                 navItem: "Introduction to DPM"},
                             1: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/dpm/TwoBolt-Powerpoint-PartTraceability-Final.mp4", 
                                 type: "video/mp4", 
-                                contentTitle: 'Download-Center',
+                                contentTitle: 'Introduction',
                                 navItem: "Introduction to DPM"},
                             2: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/dpm/TwoBolt-Powerpoint-PartTraceability-Final.webm", 
                                 type: "video/webm", 
-                                contentTitle: 'Download-Center',
+                                contentTitle: 'Introduction',
                                 navItem: "Introduction to DPM"}
                             },
                             {
                            
                             0: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/ten_reasons/Twobolt-Powerpoint-10ReasonstoChoose-final.webm", 
                                 type: "video/ogg", 
-                                contentTitle: 'Download-Center',
+                                contentTitle: 'Ten-Reasons',
                                 navItem: "Ten Reasons to Choose Image-based ID Readers"},
                             1: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/ten_reasons/Twobolt-Powerpoint-10ReasonstoChoose-final.webm", 
                                 type: "video/mp4", 
-                                contentTitle: 'Download-Center',
+                                contentTitle: 'Ten-Reasons',
                                 navItem: "Ten Reasons to Choose Image-based ID Readers"},
                             2: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/ten_reasons/Twobolt-Powerpoint-10ReasonstoChoose-final.webm", 
                                 type: "video/webm", 
-                                contentTitle: 'Download-Center',
+                                contentTitle: 'Ten-Reasons',
                                 navItem: "Ten Reasons to Choose Image-based ID Readers"}
                             },
                             {
                             
                             0: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/hotbars/1.webm", 
                                 type: "video/ogg", 
-                                contentTitle: 'Download-Center',
+                                contentTitle: 'Multiple',
                                 navItem: "Multiple Code Reading"},
                             1: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/hotbars/1.webm", 
                                 type: "video/mp4", 
-                                contentTitle: 'Download-Center',
+                                contentTitle: 'Multiple',
                                 navItem: "Multiple Code Reading"},
                             2: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/hotbars/1.webm", 
                                 type: "video/webm", 
-                                contentTitle: 'Download-Center',
+                                contentTitle: 'Multiple',
                                 navItem: "Multiple Code Reading"}
                             },
                             {
                             
                             0: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/barcode/7.webm", 
                                 type: "video/ogg", 
-                                contentTitle: 'Download-Center',
+                                contentTitle: 'Barcode',
                                 navItem: "3 Barcode Reader Features"},
                             1: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/barcode/7.webm", 
                                 type: "video/mp4", 
-                                contentTitle: 'Download-Center',
+                                contentTitle: 'Barcode',
                                 navItem: "3 Barcode Reader Features"},
                             2: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/barcode/7.webm", 
                                 type: "video/webm", 
-                                contentTitle: 'Download-Center',
+                                contentTitle: 'Barcode',
                                 navItem: "3 Barcode Reader Features"}
                             },
                             {
                             
                             0: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/hotbars/1.webm", 
                                 type: "video/ogg", 
-                                contentTitle: 'Download-Center',
+                                contentTitle: 'Why-You-Need',
                                 navItem: "Why You Need to Upgrade!"},
                             1: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/hotbars/1.webm", 
                                 type: "video/mp4", 
-                                contentTitle: 'Download-Center',
+                                contentTitle: 'Why-You-Need',
                                 navItem: "Why You Need to Upgrade!"},
                             2: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/hotbars/1.webm", 
                                 type: "video/webm", 
-                                contentTitle: 'Download-Center',
+                                contentTitle: 'Why-You-Need',
                                 navItem: "Why You Need to Upgrade!"}
                             },
                             {
                             
                             0: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/dataman_50/9.webm", 
                                 type: "video/ogg", 
-                                contentTitle: 'Download-Center',
+                                contentTitle: 'Dataman-Fifty',
                                 navItem: "DataMan 50L"},
                             1: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/dataman_50/9.webm", 
                                 type: "video/mp4",
-                                contentTitle: 'Download-Center',
+                                contentTitle: 'Dataman-Fifty',
                                 navItem: "DataMan 50L"},
                             2: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/dataman_50/9.webm", 
                                 type: "video/webm", 
-                                contentTitle: 'Download-Center',
+                                contentTitle: 'Dataman-Fifty',
                                 navItem: "DataMan 50L"}
                             },
                             {
                             
                             0: {src: "http://jamesemmettdesign.com/cognex_video/projektor/dataman300/TwoBolt-PowerPoint-QuantumLeap-Final.ogv", 
                                 type: "video/ogv", 
-                                contentTitle: 'Download-Center',
+                                contentTitle: 'Dataman-Three',
                                 navItem: "DataMan 300"},
                             1: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/dataman300/TwoBolt-PowerPoint-QuantumLeap-Final.mp4", 
                                 type: "video/mp4", 
-                                contentTitle: 'Download-Center',
+                                contentTitle: 'Dataman-Three',
                                 navItem: "DataMan 300"},
                             2: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/dataman300/TwoBolt-PowerPoint-QuantumLeap-Final.webm", 
                                 type: "video/webm", 
-                                contentTitle: 'Download-Center',
+                                contentTitle: 'Dataman-Three',
                                 navItem: "DataMan 300"}
                             },
                             {
                             
                             0: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/ethernet/Ethernet-Based.ogv", 
                                 type: "video/ogg", 
-                                contentTitle: 'Download-Center',
+                                contentTitle: 'Integrating',
                                 navItem: "Integrating ID Readers"},
                             1: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/ethernet/Ethernet-Based.mp4", 
                                 type: "video/mp4", 
-                                contentTitle: 'Download-Center',
+                                contentTitle: 'Integrating',
                                 navItem: "Integrating ID Readers"},
                             2: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/ethernet/Ethernet-Based.webm", 
                                 type: "video/webm", 
-                                contentTitle: 'Download-Center',
+                                contentTitle: 'Integrating',
                                 navItem: "Integrating ID Readers"}
-                            }
-
-                            ]    
+                            } 
+                        ]    
                 }, function(player) {
                     $('.ppnext').click(function(){
                         
@@ -337,7 +336,20 @@
             },
             this.view_btn = function(){
                 $('#cognex-view-btn').click(function(){
+                    if($(this).hasClass('active')){
+                        active_player.setStop();
+                        var current_item_index = CognexPlayer.getItemIdx();
+                        CognexPlayer.description = CognexPlayer.config._playlist[current_item_index][0].contentTitle;
+                        $("#ajax-content").load(CognexPlayer.config.description_template.src, function(){
+                            $(".cog-desc-content").empty();
+                            var clone = $("#Download-Center").clone();
+                            $('.cog-desc-content').append(clone);
+                        });
+                        return;
+                    }
+                    $(this).addClass('active');
                     active_player.setStop();
+                    $('#cognex-view-btn').trigger('click');
                 })
             },
             this.init = function(){
