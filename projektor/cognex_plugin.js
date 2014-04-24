@@ -359,7 +359,6 @@
                                         $(".cog-desc-content").empty();
                                         var clone = $("#Download-Center").clone();
                                         $('.cog-desc-content').append(clone);
-
                                         window.clearInterval(myVar);
                                     })
 
