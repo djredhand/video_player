@@ -94,30 +94,30 @@
                             },
                             {
                             
-                            0: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/hotbars/1.webm", 
+                            0: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/dpm/TwoBolt-Powerpoint-PartTraceability-Final.ogv", 
                                 type: "video/ogg", 
                                 contentTitle: 'Download-Center',
                                 navItem: "Introduction to DPM"},
-                            1: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/hotbars/1.webm", 
+                            1: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/dpm/TwoBolt-Powerpoint-PartTraceability-Final.mp4", 
                                 type: "video/mp4", 
                                 contentTitle: 'Download-Center',
                                 navItem: "Introduction to DPM"},
-                            2: {src: "media/intro.webm", 
+                            2: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/dpm/TwoBolt-Powerpoint-PartTraceability-Final.webm", 
                                 type: "video/webm", 
                                 contentTitle: 'Download-Center',
                                 navItem: "Introduction to DPM"}
                             },
                             {
                            
-                            0: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/hotbars/1.webm", 
+                            0: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/ten_reasons/Twobolt-Powerpoint-10ReasonstoChoose-final.webm", 
                                 type: "video/ogg", 
                                 contentTitle: 'Download-Center',
                                 navItem: "Ten Reasons to Choose Image-based ID Readers"},
-                            1: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/hotbars/1.webm", 
+                            1: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/ten_reasons/Twobolt-Powerpoint-10ReasonstoChoose-final.webm", 
                                 type: "video/mp4", 
                                 contentTitle: 'Download-Center',
                                 navItem: "Ten Reasons to Choose Image-based ID Readers"},
-                            2: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/hotbars/1.webm", 
+                            2: {src: "http://jamesemmettdesign.com/cognex_video/projektor/media/ten_reasons/Twobolt-Powerpoint-10ReasonstoChoose-final.webm", 
                                 type: "video/webm", 
                                 contentTitle: 'Download-Center',
                                 navItem: "Ten Reasons to Choose Image-based ID Readers"}
