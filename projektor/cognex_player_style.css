@@ -138,13 +138,13 @@ p.indent{
 }
 .cognex-content.demo-btn{
 	position: absolute;
-	margin: -115px 0 0 455px;
+	margin: -115px 0 0 479px;
 }
 #cognex-demo-btn{
 	background: url('themes/maccaco/demo_btn.png') no-repeat;
 	width: 81px;
 	height: 32px;
-	margin: 16px 0 0 22px;
+	margin: 16px 0 0 -2px;
 	cursor:pointer;
 }
 
