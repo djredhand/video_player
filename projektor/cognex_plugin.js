@@ -79,11 +79,11 @@
                             },
 
                             {
-                            0: {src: "http://jamesemmettdesign.com/cognex/projektor/media/supercharged/3.webm", 
+                            0: {src: "http://jamesemmettdesign.com/cognex/projektor/media/supercharged/3.ogv", 
                                 type: "video/ogg", 
                                 contentTitle: 'Supercharged',
                                 navItem: "Supercharged ID"},
-                            1: {src: "http://jamesemmettdesign.com/cognex/projektor/media/supercharged/3.webm", 
+                            1: {src: "http://jamesemmettdesign.com/cognex/projektor/media/supercharged/3.mp4", 
                                 type: "video/mp4", 
                                 contentTitle: 'Supercharged',
                                 navItem: "Supercharged ID"},
