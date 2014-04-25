@@ -310,6 +310,16 @@
             },
             this.eventListeners = function(){
                 var ApiTest =  function(data) {
+                    
+                    if(data===80){
+                        console.log("load erorr");
+                        function myTimer(){
+                            $('.cog-nav-item.active-item').trigger('click');
+                            window.clearInterval(myVar);   
+                        }
+                        var myVar=setInterval(function(){myTimer()},10);
+                        
+                    }
                     if(data =="STOPPED"){
                         //console.log('stopped');
                         //console.log('place description 173');
@@ -392,7 +402,7 @@
             }
         }
 
-        $.getScript( "http://jamesemmettdesign.com/cognex_video/projektor/projekktor-1.3.09.min.js" )
+        $.getScript( "http://localhost/video_player/projektor/projekktor-1.3.09.js" )
             .done(function( script, textStatus ) {
                 $('head').append('<link rel="stylesheet" href="themes/maccaco/projekktor.style.css" type="text/css" media="screen">');
                 $('head').append('<link rel="stylesheet" href="cognex_player_style.css" type="text/css" media="screen">');

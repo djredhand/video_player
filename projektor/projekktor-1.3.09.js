@@ -3219,10 +3219,10 @@ projekktorConfig.prototype = {
         10: '#10 Invalid or missing quality settings for %{title}.',
         11: '#11 Invalid streamType and/or streamServer settings for %{title}.',
         12: '#12 Invalid or inconsistent quality setup for %{title}.',
-        80: '#80 The requested file does not exist or is delivered with an invalid content-type.',
+        80: '#80 something happened',
         97: 'No media scheduled.',
         98: 'Invalid or malformed playlist data!',
-        99: 'Click display to proceed. ',
+        99: 'CLick Item Nav to proceed. ',
         100: 'Keyboard Shortcuts',
             
         /* youtube errors: */
@@ -6386,6 +6386,7 @@ $p.newModel({
             // case 16:
             case 80:
                 this.sendUpdate('error', 80);
+                alert('error')
                 break;
                 
             default:

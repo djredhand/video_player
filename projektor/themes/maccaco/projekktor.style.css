@@ -25,7 +25,10 @@ general
 }
 
 .pptestcard {
-    background: url("noise.gif") center center repeat;
+    /*
+        background: url("noise.gif") center center repeat;
+    */
+    background: #d3d4d6;
     width: 100%;
     height: 100%;
     color: #fff;
@@ -34,6 +37,7 @@ general
 }
 
 .pptestcard p {
+    display: none;
     background-color: #3b393e;
     width: 60%;
     margin: auto;
