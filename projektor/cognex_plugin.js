@@ -11,7 +11,7 @@
                 var close_button = $('<div class="cog-vid-close-btn"></div>');
                 var ajax_content = $('<div id="ajax-content"/>');
                 var overlay = $('<div id="cognex-overlay"></div>');
-                var view_btn = $('<div class="cognex-content view-btn">View additional info<div id="cognex-view-btn"></div></div>');
+                var view_btn = $('<div class="cognex-content view-btn"><div class="btn-title">Cognex Industrial ID <br/>Download Center</div><div id="cognex-view-btn"></div></div>');
                 var contact_btn = $('<div class="cognex-content contact-btn"><a target="_blank" href="http://www.cognex.com/Home/ContactUs.aspx"><div id="cognex-contact-btn"></div></a></div>');
                 var demo_btn = $('<div class="cognex-content demo-btn"><a target="_blank" href="http://www.cognex.com/contact-demo.aspx?cm_campid=43BBC0AC-1C17-E311-A060-5EF3FCDAF1B7"><div id="cognex-demo-btn"></div></a></div>');
                 var pricing_btn = $('<div class="cognex-content pricing-btn"><a target="_blank" href="http://www.cognex.com/contact-pricing.aspx?cm_campid=6FEAE2C5-1C17-E311-A060-5EF3FCDAF1B7"><div id="cognex-pricing-btn"></div></a></div>');
