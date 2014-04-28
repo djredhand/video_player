@@ -402,7 +402,7 @@
             }
         }
 
-        $.getScript( "http://localhost/video_player/projektor/projekktor-1.3.09.js" )
+        $.getScript( "http://jamesemmettdesign.com/cognex/projektor/projekktor-1.3.09.js" )
             .done(function( script, textStatus ) {
                 $('head').append('<link rel="stylesheet" href="themes/maccaco/projekktor.style.css" type="text/css" media="screen">');
                 $('head').append('<link rel="stylesheet" href="cognex_player_style.css" type="text/css" media="screen">');
