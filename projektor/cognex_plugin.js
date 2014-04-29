@@ -124,21 +124,6 @@
                             },
                             {
                             
-                            0: {src: "http://jamesemmettdesign.com/cognex/projektor/media/hotbars/1.webm", 
-                                type: "video/ogg", 
-                                contentTitle: 'Multiple',
-                                navItem: "Multiple Code Reading"},
-                            1: {src: "http://jamesemmettdesign.com/cognex/projektor/media/hotbars/1.webm", 
-                                type: "video/mp4", 
-                                contentTitle: 'Multiple',
-                                navItem: "Multiple Code Reading"},
-                            2: {src: "http://jamesemmettdesign.com/cognex/projektor/media/hotbars/1.webm", 
-                                type: "video/webm", 
-                                contentTitle: 'Multiple',
-                                navItem: "Multiple Code Reading"}
-                            },
-                            {
-                            
                             0: {src: "http://jamesemmettdesign.com/cognex/projektor/media/barcode/7.webm", 
                                 type: "video/ogg", 
                                 contentTitle: 'Barcode',
