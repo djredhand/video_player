@@ -130,7 +130,7 @@ p.indent{
 
 }
 .btn-title{
-	color: #231f20;
+	color: #fff;
 	margin: 0px 0 0px 9px;
 	text-align: center;
 	position: absolute;
@@ -184,13 +184,13 @@ p.indent{
 	float: left;
 	min-height: 200px;
 	margin: 42px 0 0 0;
-	font-size: 14px;
+	font-size: 12px;
 }
 br.clear-col{
 	clear:both;
 }
 #Download-Center{
-	  height: 446px;
+	  height: 399px;
     margin: 25px 0 0;
     overflow-y: scroll;
     width: 680px;
@@ -217,7 +217,11 @@ ul.datasheet li span{
 	width: 160px;
 }
 ul.datasheet li span a{
-	color: #000;
+	color: #0000FF;
+	text-decoration: none;
+}
+ul.datasheet li span a:hover{
+	text-decoration: underline;
 }
 ul.datasheet li.indent{
 	list-style: none;

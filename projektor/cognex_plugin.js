@@ -52,15 +52,15 @@
                             0: {src: "http://jamesemmettdesign.com/cognex/projektor/media/hotbars/1.webm", 
                                 type: "video/webm", 
                                 contentTitle: 'Hotbars',
-                                navItem: "Hotbars"},
+                                navItem: "Hotbars&trade; Image<br/> Analysis Technology"},
                             1: {src: "http://jamesemmettdesign.com/cognex/projektor/media/hotbars/1.ogv", 
                                 type: "video/ogv", 
                                 contentTitle: 'Hotbars',
-                                navItem: "Hotbars"},
+                                navItem: "Hotbars&trade; Image Analysis Technology"},
                             2: {src: "http://jamesemmettdesign.com/cognex/projektor/media/hotbars/1.mp4", 
                                 type: "video/mp4", 
                                 contentTitle: 'Hotbars',
-                                navItem: "Hotbars"}
+                                navItem: "Hotbars&trade; Image Analysis Technology"}
                             },
                             
                             {
@@ -112,7 +112,7 @@
                             0: {src: "http://jamesemmettdesign.com/cognex/projektor/media/ten_reasons/Twobolt-Powerpoint-10ReasonstoChoose-final.webm", 
                                 type: "video/ogg", 
                                 contentTitle: 'Ten-Reasons',
-                                navItem: "Ten Reasons to Choose Image-based ID Readers"},
+                                navItem: "Ten Reasons to Choose<br/> Image-based ID Readers"},
                             1: {src: "http://jamesemmettdesign.com/cognex/projektor/media/ten_reasons/Twobolt-Powerpoint-10ReasonstoChoose-final.webm", 
                                 type: "video/mp4", 
                                 contentTitle: 'Ten-Reasons',
