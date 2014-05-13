@@ -23,7 +23,8 @@ html{
 	position: absolute;
 	z-index: 999;
 	padding: 9px 0 0 25px;
-	background: transparent;
+	background: url('media/cognex.jpg')#fff no-repeat;
+	background-position: 10px 417px;
 }
 .cog-right-col{
 	float: left;
@@ -226,8 +227,13 @@ ul.datasheet li.indent{
 
 }
 .temp-content{
-	background: url("media/poster.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+	
     height: 455px;
     margin: -9px 0 0 -24px;
-    padding: 10px;
+    padding: 0 0 0 10px;
+}
+.temp-content .col-left{
+	width: 456px;
+	float: left;
+	padding: 0 20px 0 0;
 }
