@@ -251,3 +251,7 @@ img.logo{
 	position: absolute;
 	bottom: 0;
 }
+
+.temp-content .col-right img{
+	cursor: pointer;
+}
