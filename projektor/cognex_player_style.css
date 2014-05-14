@@ -18,12 +18,12 @@ html{
 	padding-left: 20px;
 }
 .cog-desc-content{
-	width: 685px;
+	width: 709px;
 	height: 471px;
 	position: absolute;
 	z-index: 999;
-	padding: 9px 0 0 25px;
-	/*background: url('media/cognex.jpg')#fff no-repeat;*/
+	/*padding: 9px 0 0 25px;
+	background: url('media/cognex.jpg')#fff no-repeat;*/
 	background-position: 10px 417px;
 }
 .cog-right-col{
@@ -190,10 +190,12 @@ br.clear-col{
 	clear:both;
 }
 #Download-Center{
-	  height: 405px;
-    margin: 25px 0 0;
-    overflow-y: scroll;
-    width: 680px;
+height: 405px;
+margin: 25px 0 0;
+overflow-y: scroll;
+width: 680px;
+background: #fff;
+padding: 0px 5px 50px 26px;
 }
 
 h4.cognex-content-title{
@@ -233,13 +235,17 @@ ul.datasheet li.indent{
 .temp-content{
 	background: #fff;
     height: 480px;
-    margin: -9px 0 0 -24px;
+    margin: 0px;
     padding: 0 0 0 10px;
 }
 .temp-content .col-left{
 	width: 456px;
 	float: left;
 	padding: 0 20px 0 0;
+}
+.temp-content .col-right img{
+	position: absolute;
+	margin: 0 0 0 1px;
 }
 img.logo{
 	position: absolute;
